@@ -1,19 +1,22 @@
-# JavaScript and the Tradovate API
+# Tradovate API Docs (Development)
 
-Welcome to the Tradovate API JavaScript Tutorial Suite! This series of tutorials will explain how to use the Tradovate API from the basics to the most advanced features that we offer. Each section represents a portion of the API and the operations therein. You can run each section in the browser and follow along.
-
-## How to Use This Guide
-
-The easiest way to use this guide is to clone the entire repo. You can then open a command prompt and navigate to any directory under `/tutorial`. Each section is its own standalone web application. Run the following command to install the dependencies for the project:
-
+This project uses Jekyll to build a custom static site fast. This should be an improvement on our original docs, as we will be able to hand-curate all content in `.md` format. First bundle the project:
 ```
 yarn install
+bundle install
 ```
 
-Once you have your project's dependencies installed, you can run the project using the following:
-
+Then serve the page:
 ```
-yarn start
+bundle exec jekyll serve
 ```
 
-This will open the project in a browser for you to hack away at.
+## Goals
+- [ ] add verbose docs for each endpoint operation. 90%.
+- [ ] add verbose docs for each Entity type. 90%.
+- [ ] add verbose docs for each Response type. 90%.
+- [x] add a WebSocket exploration tool directly to the page.
+- [x] ability to download API spec as `.yaml` or `.json`.
+- [x] be vendor-aware - the site should know if the auth'd user is a vendor or not.
+- 
+
