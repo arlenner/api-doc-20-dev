@@ -39,3 +39,7 @@ window.addEventListener('resize', () => {
     }
     known = window.innerWidth;
 });
+
+window.addEventListener('load', () => {
+    document.querySelectorAll('*[href]').forEach(entry => entry.href = entry.href.toLowerCase());
+});
