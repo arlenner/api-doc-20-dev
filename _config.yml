@@ -26,7 +26,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   to create utility applications for trading, automate a trading strategy,
   or even create a large scale, multi-user application. The sky is the limit!
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://api-doc-20-dev.vercel.app/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  arlenner
 
