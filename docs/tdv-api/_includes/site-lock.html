@@ -1,0 +1,242 @@
+<script>
+    const keySvg = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#bbb" viewBox="0 0 20 20"><title>key</title><path d="M15 6a1.54 1.54 0 0 1-1.5-1.5 1.5 1.5 0 0 1 3 0A1.54 1.54 0 0 1 15 6zm-1.5-5A5.55 5.55 0 0 0 8 6.5a6.81 6.81 0 0 0 .7 2.8L1 17v2h4v-2h2v-2h2l3.2-3.2a5.85 5.85 0 0 0 1.3.2A5.55 5.55 0 0 0 19 6.5 5.55 5.55 0 0 0 13.5 1z"/></svg>`;
+    const mdSize = 800;
+    const smSize = 500;
+    let ratio = window.innerWidth / window.innerHeight;
+    const isSmall = () => window.innerWidth < mdSize;
+    const mainContent = document.querySelector('.main-content');
+    const search = document.querySelector('.search-input-wrap');
+
+    const TDV = Symbol.for('tdv-docs');
+    const SiteStorage = window[TDV].SiteStorage;
+    const Authenticator = window[TDV].Authenticator;
+    
+    /*LOCK*/
+    const lock = document.createElement('div');
+
+    lock.id = 'tdv-lock';
+    lock.style.position = 'absolute';
+    lock.style.zIndex = 100;
+    lock.style.top = window.innerWidth > mdSize ? `12px` : `72px`;
+    lock.style.right = window.innerWidth > mdSize ? '64px' : `10px`;
+    lock.style.transition = '.33s transform ease-out';
+    lock.style.transformOrigin = 'center';
+    lock.style.cursor = 'pointer';
+
+    /*OVERLAY*/
+    const overlay = document.createElement('div');
+
+    overlay.style.height = window.innerHeight + 'px';
+    overlay.style.width = window.innerWidth + 'px';
+    overlay.style.backgroundColor = '#0005';
+    overlay.style.position = 'fixed';
+    overlay.style.top = 0;
+    overlay.style.left = 0;
+    overlay.id = 'full-overlayer';
+    overlay.style.zIndex = 101;
+    overlay.style.display = 'flex';
+    overlay.style.justifyContent = 'center';
+    overlay.style.alignItems = 'center';
+    overlay.style.transition = 'all .33ms ease-out';
+    
+    /*MODAL*/
+    const modal = document.createElement('div');
+    const topBar = document.createElement('div');
+    const tokenInput = document.createElement('input');
+    const close = document.createElement('div');
+    const submit = document.createElement('button');
+    const logout = document.createElement('button');
+    const heading = document.createElement('h2');
+    const mbox = mainContent.getBoundingClientRect();
+
+    heading.innerText = 'Enter Your Access Token';
+    heading.style.justifySelf = 'start';
+
+    submit.id = 'submit-btn';
+    submit.classList.add('btn');
+    submit.textContent = 'Authorize';
+    logout.id = 'logout-btn';
+    logout.classList.add('btn');
+    logout.textContent = 'Log Out';
+
+    modal.style.zIndex = 102;
+    modal.style.minHeight = '250px';
+    modal.style.height = winPercent(.3) + '%';
+    modal.style.width = Math.max(50, winPercent((100 - 35*ratio)/100)) + '%';
+    modal.classList.add('bg-grey-dk-300');
+    modal.style.display = 'flex';
+    modal.style.alignItems = 'center';
+    modal.style.justifyContent = 'space-evenly';
+    modal.style.flexDirection = 'column';
+    modal.style.boxShadow = '0 0 5px -2px';
+    modal.style.borderRadius = '4px';
+    modal.style.backdropFilter = 'blur(2px)';
+    modal.classList.add('main-content');   
+    modal.style.transition = 'all .33ms ease-out';
+    
+    const modalInnerWrapper = document.createElement('div');
+    modalInnerWrapper.style.height = '100%';
+    modalInnerWrapper.style.width = '75%';
+    modalInnerWrapper.style.display = 'flex';
+    modalInnerWrapper.style.alignItems = 'start';
+    modalInnerWrapper.style.justifyContent = 'space-evenly';
+    modalInnerWrapper.style.flexDirection = 'column';
+
+    tokenInput.type = 'text';
+    tokenInput.id = 'access-token-input';
+    tokenInput.style.backgroundColor = '#27262b';
+    tokenInput.style.color = 'white';
+    tokenInput.style.padding = '4px';
+    tokenInput.placeholder = '12345-abcde...';
+    tokenInput.style.border = 'none';
+    tokenInput.style.outline = 'none';
+    tokenInput.style.borderBottom = '1px solid grey';
+    tokenInput.style.height = '64px';
+    tokenInput.style.width = '100%';
+
+    const inputLabel = document.createElement('label');
+    inputLabel.style.position = 'relative';
+    inputLabel.style.width = '100%';
+    
+    const inputKeyTag = document.createElement('svg');
+    inputKeyTag.innerHTML = keySvg;
+    
+    tokenInput.addEventListener('focusin', () => {
+        inputKeyTag.style.transform = isSmall() ? 'scale(1.5)' : 'scale(2)';
+        inputKeyTag.firstElementChild.style.fill = '#f77e7e';
+        inputKeyTag.style.left = '-32px';
+        inputKeyTag.style.top = '20px';
+    });
+
+    tokenInput.addEventListener('focusout', () => {
+        inputKeyTag.style.transform = isSmall() ? '' : 'scale(1.5)';
+        inputKeyTag.firstElementChild.style.fill = '#bbb';
+        inputKeyTag.style.left = '-24px';
+        inputKeyTag.style.top = '24px';
+    });
+
+    inputLabel.appendChild(inputKeyTag);
+    inputKeyTag.style.position = 'absolute';
+    inputKeyTag.style.transform = isSmall() ? '' : 'scale(1.5)';
+    inputKeyTag.style.left = '-24px';
+    inputKeyTag.style.top = '24px';
+    inputKeyTag.style.transition = 'all .25s ease-out';
+
+    inputLabel.appendChild(tokenInput);
+
+    close.style.position = 'absolute';
+    close.style.top = '4px';
+    close.style.right = '0px';
+    close.style.height = '48px';
+    close.style.width = '48px';
+    close.innerText = '❌';
+    close.style.fontSize = '20px';
+    close.style.cursor = 'pointer';
+
+    modalInnerWrapper.appendChild(heading);
+    modalInnerWrapper.appendChild(inputLabel);
+    modalInnerWrapper.appendChild(submit);
+    modalInnerWrapper.appendChild(close);
+    modal.appendChild(modalInnerWrapper);
+    overlay.appendChild(modal);
+
+    window.addEventListener('resize', () => {
+        ratio = window.innerWidth / window.innerHeight;
+        overlay.style.height = window.innerHeight + 'px';
+        overlay.style.width = window.innerWidth + 'px';
+
+        modal.style.height = winPercent(.3) + '%';
+        modal.style.width = Math.max(50, winPercent((100 - 35*ratio)/100)) + '%';
+
+        lock.style.top = window.innerWidth > mdSize ? `12px` : `72px`;
+        lock.style.right = window.innerWidth > mdSize ? '64px' : `10px`;
+    });
+
+    lock.addEventListener('mouseenter', _ => {
+        lock.style.transform = 'scale(1.1)';
+    });
+
+    lock.addEventListener('mouseleave', _ => {
+        lock.style.transform = 'scale(1)';
+    });
+
+    lock.addEventListener('click', async _ => {
+        let result = SiteStorage.getLockedIn();
+        const over = document.querySelector('full-overlayer');
+        if(!over) {
+            document.body.appendChild(prepOverlay(result));
+        }
+    });
+
+    close.addEventListener('click', _ => {
+        removeOverlay();       
+    });
+
+    submit.addEventListener('click', async _ => {
+        let maybeToken = document.getElementById('access-token-input');
+
+        await Authenticator.authenticate(maybeToken.value);
+        if(Authenticator.isAuthenticated()) {
+            removeOverlay();
+            maybeToken.style.border = 'none';
+            alert('API Authorization successful.');
+        } else {
+            heading.textContent = 'Token Was Invalid!';
+            maybeToken.style.border = '1px solid red';
+        }
+    });
+
+    logout.addEventListener('click', async _ => {
+        Authenticator.logout();
+        removeOverlay();
+    });
+
+    Authenticator.setLockElement(lock);
+    mainContent.appendChild(lock);
+
+    /*UTILS*/
+
+    function removeOverlay() {
+        let over = document.getElementById('full-overlayer');
+        if(over) {
+            overlay.style.opacity = '0';
+            overlay.remove();
+        }   
+    }
+
+    function prepOverlay(result) {
+        const _submit = modalInnerWrapper.querySelector('#submit-btn');
+        const _logout = modalInnerWrapper.querySelector('#logout-btn');
+        const input = modalInnerWrapper.querySelector('input');
+        const key = modalInnerWrapper.querySelector('svg');
+        const h2 = modalInnerWrapper.querySelector('h2');
+        if(result) {
+            h2.textContent = 'API Is Authorized';
+            if(input && key) {
+                inputLabel.remove();
+            }   
+            if(_submit) {
+                modalInnerWrapper.replaceChild(logout, submit);
+            } else {
+                modalInnerWrapper.appendChild(logout);
+            }
+        } else {
+            h2.textContent = 'Enter Your Access Token';
+            if(_logout) {
+                modalInnerWrapper.replaceChild(submit, logout);
+            } else {
+                modalInnerWrapper.appendChild(submit);
+            }
+            if(!input && !key) {
+                tokenInput.value = '';
+                submit.parentElement.insertBefore(inputLabel, submit);
+            }
+        }
+        overlay.style.opacity = '1';
+        return overlay;
+    }
+
+    function winPercent(decimalPercent) {
+        return (((window.innerHeight * decimalPercent)/window.innerHeight)*100);
+    }
+</script>

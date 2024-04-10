@@ -1,0 +1,686 @@
+@import "./color_schemes/dark";
+
+$link-color: $blue-000;
+// $sidebar-color: $grey-dk-200;
+// $border-color: #eeebee;
+$sidebar-transparent: mix($sidebar-color, transparent, 50%);
+
+.checker {
+    margin-top: .25em;
+    margin-left: .25em;
+    padding-left: 2em;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    font-size: 1em;
+    
+}
+  
+/* Hide the default checkbox */
+input[type=checkbox] {
+    visibility: hidden;
+}
+  
+/* creating a custom checkbox based
+    on demand */
+.checker-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.5em;
+    width: 1.5em;
+    border-radius: 4px;
+    background-color: black;    
+}
+  
+/* specify the background color to be
+shown when hovering over checkbox */
+.checker:hover input ~ .checker-inner {
+    background-color: mix($blue-300, black, 20%);
+}
+  
+/* specify the background color to be
+shown when checkbox is active */
+.checker input:active ~ .checker-inner {
+    background-color: darken($blue-300, 20%);
+}
+  
+/* specify the background color to be
+shown when checkbox is checked */
+.checker input:checked ~ .checker-inner {
+    background-color: $blue-300;
+}
+  
+/* checkmark to be shown in checkbox */
+/* It is not be shown when not checked */
+.checker-inner:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+/* display checkmark when checked */
+.checker input:checked ~ .checker-inner:after {
+    display: block;
+}
+  
+/* styling the checkmark using webkit */
+/* creating a square to be the sign of
+    checkmark */
+.checker .checker-inner:after {
+    left: .5em;
+    bottom: .375em;
+    width: .375em;
+    height: .75em;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+//
+// Styles for rendered markdown in the .main-content container
+//
+// stylelint-disable selector-no-type, max-nesting-depth, selector-max-compound-selectors, selector-max-type
+
+.main {
+    z-index: 1;
+}
+
+.main-content {
+    margin-top: 2em;
+    @include mq(sm) {
+        line-height: $content-line-height;
+    }
+    
+
+    // @include mq(xs) {
+    //     margin-top: $header-height;
+    // }
+    // @include mq(md) {
+    //     margin-top: 0;
+    // }
+
+    ol,
+    ul,
+    dl,
+    pre,
+    address,
+    blockquote,
+    .table-wrapper {
+      margin-top: 0.5em;
+    }
+  
+    a {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  
+    ul,
+    ol {
+      padding-left: 1.5em;
+    }
+  
+    li {
+      .highlight {
+        margin-top: $sp-1;
+      }
+    }
+  
+    ol {
+      list-style-type: none;
+      counter-reset: step-counter;
+  
+      > li {
+        position: relative;
+  
+        &::before {
+          position: absolute;
+          top: 0.2em;
+          left: -1.6em;
+          color: $grey-dk-000;
+          content: counter(step-counter);
+          counter-increment: step-counter;
+          @include fs-3;
+  
+          @include mq(sm) {
+            top: 0.11em;
+          }
+        }
+  
+        ol {
+          counter-reset: sub-counter;
+  
+          li {
+            &::before {
+              content: counter(sub-counter, lower-alpha);
+              counter-increment: sub-counter;
+            }
+          }
+        }
+      }
+    }
+  
+    ul {
+      list-style: none;
+  
+      > li {
+        &::before {
+          position: absolute;
+          margin-left: -1.4em;
+          color: $grey-dk-000;
+          content: "•";
+        }
+      }
+    }
+  
+    .task-list {
+      padding-left: 0;
+    }
+  
+    .task-list-item {
+      display: flex;
+      align-items: center;
+  
+      &::before {
+        content: "";
+      }
+    }
+  
+    .task-list-item-checkbox {
+      margin-right: 0.6em;
+    }
+  
+    hr + * {
+      margin-top: 0;
+    }
+  
+    h1:first-of-type {
+      margin-top: 0.5em;
+    }
+  
+    dl {
+      display: grid;
+      grid-template: auto / 10em 1fr;
+    }
+  
+    dt,
+    dd {
+      margin: 0.25em 0;
+    }
+  
+    dt {
+      grid-column: 1;
+      font-weight: 500;
+      text-align: right;
+      &::after {
+        content: ":";
+      }
+    }
+  
+    dd {
+      grid-column: 2;
+      margin-bottom: 0;
+      margin-left: 1em;
+      blockquote,
+      div,
+      dl,
+      dt,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      li,
+      ol,
+      p,
+      pre,
+      table,
+      ul,
+      .table-wrapper {
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  
+    dd,
+    ol,
+    ul {
+      dl:first-child {
+        dt:first-child,
+        dd:nth-child(2) {
+          margin-top: 0;
+        }
+      }
+    }
+  
+    .anchor-heading {
+      position: absolute;
+      right: -$sp-4;
+      width: $sp-5;
+      height: 100%;
+      padding-right: $sp-1;
+      padding-left: $sp-1;
+      overflow: visible;
+  
+      @include mq(md) {
+        right: auto;
+        left: -$sp-5;
+      }
+  
+      svg {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        color: $link-color;
+        visibility: hidden;
+      }
+    }
+  
+    .anchor-heading:hover,
+    h1:hover > .anchor-heading,
+    h2:hover > .anchor-heading,
+    h3:hover > .anchor-heading,
+    h4:hover > .anchor-heading,
+    h5:hover > .anchor-heading,
+    h6:hover > .anchor-heading {
+      svg {
+        visibility: visible;
+      }
+    }
+  
+    summary {
+      cursor: pointer;
+    }
+  
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      position: relative;
+      margin-top: 1.5em;
+      margin-bottom: 0.25em;
+  
+      &:first-child {
+        margin-top: $sp-2;
+      }
+  
+      + table,
+      + .table-wrapper,
+      + .code-example,
+      + .highlighter-rouge {
+        margin-top: 1em;
+      }
+  
+      + p {
+        margin-top: 0;
+      }
+    }
+}
+
+.site-nav,
+.site-header,
+.site-footer {
+    width: 100%;
+
+    @include mq(lg) {
+        width: $nav-width;
+    }
+}
+
+.site-nav {
+    display: none;
+
+    &.nav-open {
+        display: block;
+        @include mq(xs) {
+            background-color: $sidebar-color;
+            z-index: 2;
+        }
+        @include mq(lg) {
+            background-color: transparent;
+            z-index: 0;
+        }
+    }
+
+    @include mq(lg) {
+        margin-top: 0;
+        display: block;
+        padding-top: $sp-8;
+        padding-bottom: $gutter-spacing-sm;
+        overflow-y: auto;
+        flex: 1 1 auto;
+    }
+}
+
+.search .search-input {
+    color: $grey-lt-000;
+    font-family: "Montserrat", sans-serif;
+}
+
+.breadcrumb-nav-list {
+
+    max-width: 75%;
+    
+    & li {
+        display: inline;
+    }
+}
+
+// .search {
+
+//     div {
+//         z-index: 5;
+//     }
+
+//     position: relative;
+//     z-index: 5;
+//     flex-grow: 1;
+//     height: $sp-10;
+//     padding: $sp-2;
+//     transition: padding linear #{$transition-duration / 2};
+  
+//     @include mq(lg) {
+//       position: relative !important;
+//       width: auto !important;
+//       height: 100% !important;
+//       padding: 0;
+//       transition: none;
+//     }
+
+//     @include mq(xs) {
+//         position: fixed;
+//     }
+//   }
+
+// .site-header {
+//     display: flex;
+//     min-height: $header-height;
+//     align-items: center;
+//     background-color: $sidebar-color;    
+
+//     @include mq(lg) {
+//         position: relative;
+//         height: $header-height;
+//         max-height: $header-height;
+//         border-bottom: $border $border-color;
+//         z-index: 3;
+//     }
+
+//     @include mq(xs) {
+//         position: fixed;
+//         top: 0;
+//         left: 0;
+//         height: $header-height;
+//         max-height: $header-height;
+//         border-bottom: $border $border-color;
+//         z-index: 3;
+//     }
+// }
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 1s ease-in;
+}
+
+.tdv-rightbar {
+    position: fixed;
+    height: 100%;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    background-color: $sidebar-color;
+    border-left: 1px solid $border-color;
+    transition: width .1s ease-out, right .1s ease-out;
+
+    & select {
+        outline: none;
+        border-left: none;
+        border-top: none;
+        border-right: none;
+        border-bottom: 1px solid $border-color;
+        background-color: $grey-dk-300;
+        color: white;
+    }
+
+    .tdv-rightbar-item {
+        opacity: 0;
+    }
+
+    .tdv-rightbar-item.fade-in {
+        opacity: 1;
+        transition: opacity .5s ease-in;
+    }
+    
+    // overflow-y: auto;    
+
+    @include mq(xs) {
+        right: -1064px;
+        width: 100%;
+    }
+
+    @include mq(md) {
+        // margin-left: $nav-width-md;
+        width: calc(100% - #{$nav-width-md});
+    }
+    
+    @include mq(lg) {
+        width: calc(#{$content-width}/2);
+    }
+
+    @include mq(xl) {
+        .tdv-rightbar-item {
+            opacity: 1;
+        }
+        width: calc((100% - #{$nav-width + $content-width}) / 2);
+        right: 0;
+    }
+
+}
+
+.compound-param {
+    padding-top: 1em;
+    margin-left: 2em;
+    border-top: 1px solid $border-color;
+}
+
+
+.ws-param-box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.ws-param-box * {
+    margin: .1em;
+}
+
+.ws-param-box label {
+    width: 50%;
+
+    @include mq(md) {
+        width: 25%;
+    }
+}
+
+.tdv-socket-box {
+    border: 1px solid $border-color;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    & select, & input[type=text], & input[type=number] {
+        outline: none;
+        border-left: none;
+        border-top: none;
+        border-right: none;
+        border-bottom: 1px solid $border-color;
+        background-color: $grey-dk-300;
+        color: white;
+    }
+}
+
+.tdv-playground-palette-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.tdv-playground-palette-content button {
+    margin: .1em;
+}
+
+.tdv-msg-input {
+    overflow-wrap: break-word;
+    min-height: 4em;
+
+    & pre {
+        width: 100%;
+        overflow-x: visible;
+    }
+}
+
+.tdv-msg-output {
+    display: flex;
+    flex-direction: row;
+    min-height: 30vh;
+    max-height: 30vh;
+    overflow: auto;
+    list-style-type: none;
+    list-style: none;
+
+    & pre {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    & li {
+        display: flex;
+        flex-direction: row;
+        align-items: unset;
+        justify-content: start;
+
+        span {
+            max-height: initial;
+        }
+
+        & summary {
+            width: 90%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            cursor: zoom-in;
+        }
+        & details {
+            width: 100%;
+            list-style: initial;
+            align-self: flex-start;
+            & div {
+                text-overflow: initial;
+                overflow-x: auto;
+            }
+        }
+    }
+
+}
+
+.tdv-msgs {
+    width: 100%;
+    overflow: auto;
+    justify-content: end;
+}
+
+.tdv-msgs pre ul {
+    list-style: none;
+    list-style-type: none;
+    
+    & li {
+        margin-left: -1em;
+    }
+
+    & div:nth-child(odd) {
+        background-color: lighten($sidebar-color, 25%);        
+    }
+
+    // & span:nth-child(even) {
+    //     background-color: lighten($sidebar-color, 10%);
+    // }
+}
+
+#send-text {
+    overflow-x: auto;
+}
+
+.tdv-msgs * {
+    list-style: none;
+}
+
+.tdv-rightbar-item {
+    padding: 1.5em;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.tdv-op-container {
+    margin-bottom: 2em;
+    overflow: auto;
+}
+
+.highlight .tdv-op-param-box pre {
+    backdrop-filter: blur(2px);
+    background-color: $sidebar-transparent;
+}
+
+.tdv-btn-box {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.tdv-btn-box .btn {
+    margin: .5em;
+}
+
+.tdv-btn-box button {
+    margin-right: 1em;
+}
+
+.sha-box {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white, 50%)) {
+    ::-webkit-scrollbar {
+        width:  $size;
+        height: $size;
+    }
+  
+    ::-webkit-scrollbar-thumb {
+        background: $foreground-color;
+    }
+  
+    ::-webkit-scrollbar-track {
+        background: $background-color;
+    }
+  
+    // For Internet Explorer
+    body {
+        scrollbar-face-color: $foreground-color;
+        scrollbar-track-color: $background-color;
+    }
+}
+  
+@include scrollbars(.5em, $grey-dk-000, $grey-lt-300);
+  
