@@ -3,7 +3,7 @@ layout: page
 title: /contract/rollContract
 parent: Contract Library
 grand_parent: API Operations
-permalink: /all-ops/contract/RollContract
+permalink: /all-ops/contract/rollcontract
 op: true
 ---
 

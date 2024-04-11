@@ -3,7 +3,7 @@ layout: page
 title: /user/cancelEverything
 parent: Users
 grand_parent: API Operations
-permalink: /all-ops/user/cancelEverything
+permalink: /all-ops/user/canceleverything
 op: true
 ---
 
@@ -15,10 +15,10 @@ op: true
         window[TDV].defineTryit({
             name: 'CancelEverything',
             endpoint: '/user/cancelEverything',
+            message: `Behavior is different when called in LIVE vs SIM environments - ensure that you are calling from both LIVE and SIM if you want to truly cancel all subscriptions, plugins, and tradingPermissions.`,
             method: 'POST',
             params: {
-                'userId': 0,
-                'accountId': 0
+                'userIds': [0]
             }
         });
 

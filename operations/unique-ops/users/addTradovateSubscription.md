@@ -3,7 +3,7 @@ layout: page
 title: /user/addTradovateSubscription
 parent: Users
 grand_parent: API Operations
-permalink: /all-ops/user/addTradovateSubscription
+permalink: /all-ops/user/addtradovatesubscription
 op: true
 ---
 

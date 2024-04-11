@@ -3,7 +3,7 @@ layout: page
 title: /orderStrategy/modifyOrderStrategy
 parent: Orders
 grand_parent: API Operations
-permalink: /all-ops/orderstrategy/ModifyOrderStrategy
+permalink: /all-ops/orderstrategy/modifyorderstrategy
 op: true
 ---
 

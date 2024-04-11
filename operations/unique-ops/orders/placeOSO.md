@@ -3,7 +3,7 @@ layout: page
 title: /order/placeOSO
 parent: Orders
 grand_parent: API Operations
-permalink: /all-ops/order/PlaceOSO
+permalink: /all-ops/order/placeoso
 op: true
 ---
 

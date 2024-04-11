@@ -3,7 +3,7 @@ layout: page
 title: /account/getCashBalanceSnapshot
 parent: Accounting
 grand_parent: API Operations
-permalink: /all-ops/cashBalance/getcashbalancesnapshot
+permalink: /all-ops/cashbalance/getcashbalancesnapshot
 op: true
 ---
 

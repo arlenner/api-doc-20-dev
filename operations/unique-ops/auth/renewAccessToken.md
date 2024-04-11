@@ -3,7 +3,7 @@ layout: page
 title: /auth/renewAccessToken
 parent: Auth
 grand_parent: API Operations
-permalink: /all-ops/auth/RenewAccessToken
+permalink: /all-ops/auth/renewaccesstoken
 op: true
 ---
 

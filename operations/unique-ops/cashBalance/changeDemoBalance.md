@@ -1,26 +1,31 @@
 ---
 layout: page
-title: /adminAlertSignal/completeAlertSignal
-parent: Alerts
+title: /cashBalance/changeDemoBalance
+parent: CashBalance
 grand_parent: API Operations
-permalink: /all-ops/adminalertsignal/completealertsignal
+permalink: /all-ops/cashbalance/changedemobalance
 op: true
 ---
 
 <script>
     window.addEventListener('load', () => {
         const TDV = Symbol.for('tdv-docs');
+        const SiteStorage = window[TDV].SiteStorage;
+
         window[TDV].defineTryit({
-            name: 'completeAlertSignal',
-            endpoint: '/adminAlertSignal/completeAlertSignal',
+            name: 'ChangeDemoBalance',
+            endpoint: '/cashBalance/changeDemoBalance',
             method: 'POST',
             params: {
-                adminAlertSignalId: 0
+                accountId: 0,
+                maxNetLiq: 0
             }
         });
+
         window[TDV].buildCallouts(
             window[TDV].buildCallouts.defaultAuthWarning,
-            window[TDV].buildCallouts.defaultVendorWarning
+            window[TDV].buildCallouts.defaultVendorWarning,
         );
     });
+
 </script>

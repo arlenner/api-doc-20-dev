@@ -3,7 +3,7 @@ layout: page
 title: /order/cancelOrder
 parent: Orders
 grand_parent: API Operations
-permalink: /all-ops/order/CancelOrder
+permalink: /all-ops/order/cancelorder
 op: true
 ---
 

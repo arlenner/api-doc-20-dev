@@ -3,7 +3,7 @@ layout: page
 title: /order/liquidatePosition
 parent: Orders
 grand_parent: API Operations
-permalink: /all-ops/order/LiquidatePosition
+permalink: /all-ops/order/liquidateposition
 op: true
 ---
 

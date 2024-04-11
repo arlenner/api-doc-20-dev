@@ -3,7 +3,7 @@ layout: page
 title: /contract/getProductFeeParams
 parent: Contract Library
 grand_parent: API Operations
-permalink: /all-ops/contract/GetProductFeeParams
+permalink: /all-ops/contract/getproductfeeparams
 op: true
 ---
 

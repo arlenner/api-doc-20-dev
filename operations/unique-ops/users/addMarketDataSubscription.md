@@ -3,7 +3,7 @@ layout: page
 title: /user/addMarketDataSubscription
 parent: Users
 grand_parent: API Operations
-permalink: /all-ops/user/addMarketDataSubscription
+permalink: /all-ops/user/addmarketdatasubscription
 op: true
 ---
 

@@ -3,7 +3,7 @@ layout: page
 title: /cashBalance/changeDemoBalance
 parent: Accounting
 grand_parent: API Operations
-permalink: /all-ops/cashBalance/changeDemoBalance
+permalink: /all-ops/cashbalance/changedemobalance
 op: true
 ---
 

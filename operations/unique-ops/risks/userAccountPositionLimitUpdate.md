@@ -3,6 +3,6 @@ layout: page
 title: /userAccountPositionLimit/update
 parent: Risks
 grand_parent: API Operations
-permalink: /all-ops/risks/UserAccountPositionLimitUpdate
+permalink: /all-ops/risks/useraccountpositionlimitupdate
 op: true
 ---

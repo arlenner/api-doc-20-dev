@@ -3,7 +3,7 @@ layout: page
 title: /userPlugin/addEntitlementSubscription
 parent: Users
 grand_parent: API Operations
-permalink: /all-ops/userPlugin/addEntitlementSubscription
+permalink: /all-ops/userplugin/addentitlementsubscription
 op: true
 ---
 

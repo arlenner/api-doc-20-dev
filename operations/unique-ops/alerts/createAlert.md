@@ -3,7 +3,7 @@ layout: page
 title: /alert/createAlert
 parent: Alerts
 grand_parent: API Operations
-permalink: /all-ops/alert/createAlert
+permalink: /all-ops/alert/createalert
 op: true
 ---
 

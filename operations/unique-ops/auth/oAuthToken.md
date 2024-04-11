@@ -11,7 +11,7 @@ In this short tutorial, we will cover using the OAuth service to authenticate us
 via OAuth for Tradovate is a three step process.
 
 1. We navigate to a special OAuth URL using our client id and client secret, which will be supplied by Tradovate. We present our 
-google credentials here.
+Tradovate credentials here.
 2. After presenting our credentials, we will be redirected to a supplied redirect URL, but a single-use code will be in the URL query.
 Our server must extract the code from the query so we can use it in step 3.
 3. We exchange the extracted code for our access token, and we are officially an authenticated entity.
@@ -155,7 +155,7 @@ When we run the code we created, our flow will go like this:
 Nothing ever happens. Or we get an error from express saying `cannot /GET`. That's because we never setup a route
 for our callback. 
 
-What happens when we present our google credentials is basically this - your app asks for confirmation that your web identity is accurate. If your user can satisfy the request, the client will receive a single-use code as a response. The response is sent to the `REDIRECT_URI` address that we specified at the top of the file. The actual `code` parameter comes to us in the form of the URL query. We can access this using the express Request object (any `req` parameter within in a route callback).
+What happens when we present our Tradovate credentials is basically this - your app asks for confirmation that your web identity is accurate. If your user can satisfy the request, the client will receive a single-use code as a response. The response is sent to the `REDIRECT_URI` address that we specified at the top of the file. The actual `code` parameter comes to us in the form of the URL query. We can access this using the express Request object (any `req` parameter within in a route callback).
 
 Back in our `ROUTES` section, add a new route:
 
