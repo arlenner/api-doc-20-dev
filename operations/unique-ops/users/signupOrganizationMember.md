@@ -3,7 +3,7 @@ layout: page
 title: /user/signupOrganizationMember
 parent: Users
 grand_parent: API Operations
-permalink: /all-ops/user/signupOrganizationMember
+permalink: /all-ops/user/signuporganizationmember
 op: true
 ---
 

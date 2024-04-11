@@ -3,7 +3,7 @@ layout: page
 title: /user/createTradingPermission
 parent: Users
 grand_parent: API Operations
-permalink: /all-ops/user/createTradingPermission
+permalink: /all-ops/user/createtradingpermission
 op: true
 ---
 

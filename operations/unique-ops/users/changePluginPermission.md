@@ -3,7 +3,7 @@ layout: page
 title: /user/changePluginPermission
 parent: Users
 grand_parent: API Operations
-permalink: /all-ops/user/changePluginPermission
+permalink: /all-ops/user/changepluginpermission
 op: true
 ---
 

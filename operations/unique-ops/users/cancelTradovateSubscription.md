@@ -3,7 +3,7 @@ layout: page
 title: /user/cancelTradovateSubscription
 parent: Users
 grand_parent: API Operations
-permalink: /all-ops/user/cancelTradovateSubscription
+permalink: /all-ops/user/canceltradovatesubscription
 op: true
 ---
 
@@ -30,5 +30,3 @@ op: true
     });
 
 </script>
-
-<div id="vendor-warning"></div>

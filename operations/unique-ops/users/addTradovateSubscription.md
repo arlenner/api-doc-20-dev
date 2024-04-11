@@ -31,5 +31,3 @@ op: true
     });
 
 </script>
-
-<div id="vendor-warning"></div>
