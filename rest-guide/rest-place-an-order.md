@@ -60,25 +60,6 @@ async function placeOrder(config) {
 } 
 ```
 
-We can also opt for the API object method that comes with this guide.
-
-```js
-import { API } from '../../../shared/api'
-
-const orderConfig = {
-    accountSpec: 'DEMO12345',
-    accountId: 12345,
-    symbol: 'ESU2',
-    orderQty: 1,
-    isAutomated: true,
-    action: 'Buy',
-    orderType: 'Market'
-}
-
-async function doOrder() {
-    const orderResult = await API.order.placeOrder(orderConfig)
-}
-```
 
 ---
 

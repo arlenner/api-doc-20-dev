@@ -33,16 +33,6 @@ async function findRelatedOrders(accountId) {
 }
 ```
 
-Or you can use the built-in API Object:
-
-```js
-import { API } from '../../../shared/api'
-
-async function findRelatedOrders(accountId) {
-    return await API.order.deps(accountId)
-}
-```
-
 ---
 
 [{% include chev-left.html %} The Entity System]({{site.baseurl}}/entity-system){: .btn .btn-blue .text-grey-lt-000 }
