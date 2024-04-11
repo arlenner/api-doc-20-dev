@@ -52,4 +52,4 @@ const renewAccess = async () => await API.auth.renewAccessToken()
 ---
 
 [{% include chev-left.html %} Using Device IDs]({{site.baseurl}}/rest-guide/device-id){: .btn .btn-blue .text-grey-lt-000 }
-[Storing User Data {% include chev-right.html %}]({{site.baseurl}}/rest-guide/storing-user-data){: .btn .float-right .btn-blue .text-grey-lt-000 }
+[Place An Order {% include chev-right.html %}]({{site.baseurl}}/rest-guide/place-an-order){: .btn .float-right .btn-blue .text-grey-lt-000 }
