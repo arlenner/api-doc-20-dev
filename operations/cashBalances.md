@@ -1,9 +1,9 @@
 ---
 layout: page
-title: CashBalance
+title: Cash Balane
 parent: API Operations
 permalink: /all-ops/cashbalance
 has_children: true
 ---
 
-## CashBalances
+## Cash Balance

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: /cashBalance/changeDemoBalance
-parent: CashBalance
+parent: Cash Balance
 grand_parent: API Operations
 permalink: /all-ops/cashbalance/changedemobalance
 op: true
