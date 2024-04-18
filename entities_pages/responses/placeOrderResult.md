@@ -3,7 +3,7 @@ layout: page
 title: PlaceOrderResult
 parent: Entities Index
 grand_parent: The Entity System
-permalink: /entity-system/index/placeOrderResult
+permalink: /entity-system/index/placeorderresult
 ---
 
 ## PlaceOrderResult

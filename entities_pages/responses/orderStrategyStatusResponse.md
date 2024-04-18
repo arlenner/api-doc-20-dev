@@ -3,7 +3,7 @@ layout: page
 title: OrderStrategyStatusResponse
 parent: Entities Index
 grand_parent: The Entity System
-permalink: /entity-system/index/orderStrategyStatusResponse
+permalink: /entity-system/index/orderstrategystatusresponse
 ---
 
 ## OrderStrategyStatusResponse

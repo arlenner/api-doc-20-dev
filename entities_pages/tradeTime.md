@@ -3,7 +3,7 @@ layout: page
 title: TradeTime
 parent: Entities Index
 grand_parent: The Entity System
-permalink: /entity-system/index/tradeTime
+permalink: /entity-system/index/tradetime
 ---
 
 ## TradeTime

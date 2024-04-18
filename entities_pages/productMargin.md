@@ -3,7 +3,7 @@ layout: page
 title: ProductMargin
 parent: Entities Index
 grand_parent: The Entity System
-permalink: /entity-system/index/productMargin
+permalink: /entity-system/index/productmargin
 ---
 
 ## ProductMargin

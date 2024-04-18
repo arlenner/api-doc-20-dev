@@ -3,7 +3,7 @@ layout: page
 title: ProductSession
 parent: Entities Index
 grand_parent: The Entity System
-permalink: /entity-system/index/productSession
+permalink: /entity-system/index/productsession
 ---
 
 ## ProductSession

@@ -3,7 +3,7 @@ layout: page
 title: EntitlementSubscriptionResponse
 parent: Entities Index
 grand_parent: The Entity System
-permalink: /entity-system/index/entitlementSubscriptionResponse
+permalink: /entity-system/index/entitlementsubscriptionresponse
 ---
 
 ## EntitlementSubscriptionResponse

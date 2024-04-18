@@ -3,7 +3,7 @@ layout: page
 title: Entities Index
 parent: The Entity System
 has_children: true
-permalink: /entity-system/index/
+permalink: /entity-system/entities-index/
 nav_order: 10
 ---
 

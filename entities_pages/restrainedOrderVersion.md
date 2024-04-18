@@ -1,6 +1,6 @@
 ---
 layout: page
-title: OrderVersion
+title: RestrainedOrderVersion
 parent: Entities Index
 grand_parent: The Entity System
 permalink: /entity-system/index/restrainedorderversion

@@ -3,7 +3,7 @@ layout: page
 title: UserPlugin
 parent: Entities Index
 grand_parent: The Entity System
-permalink: /entity-system/index/userPlugin
+permalink: /entity-system/index/userplugin
 ---
 
 ## UserPlugin

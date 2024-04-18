@@ -3,7 +3,7 @@ layout: page
 title: PlaceOcoResult
 parent: Entities Index
 grand_parent: The Entity System
-permalink: /entity-system/index/PlaceOcoResult
+permalink: /entity-system/index/placeocoresult
 ---
 
 ## PlaceOcoResult

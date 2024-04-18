@@ -3,7 +3,7 @@ layout: page
 title: FillFee
 parent: Entities Index
 grand_parent: The Entity System
-permalink: /entity-system/index/fillFee
+permalink: /entity-system/index/fillfee
 ---
 
 ## FillFee
