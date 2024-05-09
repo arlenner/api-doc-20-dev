@@ -42,7 +42,7 @@ This operation is used to retrieve an access token using your API Key and Tradov
 | `deviceId` | `none`{: .label } | string | Important value that identifies the device used to make this login attempt. Although any device may request an access token, only approved devices may trade Live Accounts. See the [Device ID]({{site.baseurl}}/auth-guide/device-id) section for more details.
 
 ### Response
-[AccessTokenResponse]({{site.baseurl}}/entity-system/index/AccessTokenResponse)
+[AccessTokenResponse]({{site.baseurl}}/entity-system/entity-index/AccessTokenResponse)
 
 ### Example
 ```js

@@ -40,6 +40,7 @@ window.addEventListener('resize', () => {
     known = window.innerWidth;
 });
 
+// MAKE ALL LINKS LOWERCASE HACK
 window.addEventListener('load', () => {
     document.querySelectorAll('*[href]').forEach(entry => entry.href = entry.href.toLowerCase());
 });

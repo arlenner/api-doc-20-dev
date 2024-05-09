@@ -121,7 +121,7 @@
         }
 
         container.classList.add('tdv-rightbar-item');
-        container.style.marginTop = mainHeader.getBoundingClientRect().height + 'px';
+        // container.style.marginTop = mainHeader.getBoundingClientRect().height + 'px';
         inputContainer.classList.add('tdv-op-container');
         paramBox.classList.add('tdv-op-param-box');
         resultContainer.classList.add('tdv-op-container');

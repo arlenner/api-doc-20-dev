@@ -3,7 +3,7 @@ layout: page
 title: EntitlementSubscriptionResponse
 parent: Entities Index
 grand_parent: The Entity System
-permalink: /entity-system/index/entitlementsubscriptionresponse
+permalink: /entity-system/entity-index/entitlementsubscriptionresponse
 ---
 
 ## EntitlementSubscriptionResponse
@@ -15,4 +15,4 @@ Expected response from the [`/userPlugin/addEntitlementSubscription`]({{site.bas
 |:---------|:-----|:-----|:-------
 | `errorText` | `none`{: .label } | string <= 8192 chars | Non-empty if the request failed.
 | `errorCode` | `none`{: .label } | Enum, `"ConflictWithExisting"` `"DowngradeNotAllowed"` `"IncompatibleCMEMarketDataSubscriptionPlans"` `"IncorrectPaymentMethod"` `"InsufficientFunds"` `"PaymentProviderError"` `"PlanDiscontinued"` `"SingleTrialOnly"` `"Success"` `"UnknownError"` |
-| `entitlementSubscription` | `none`{: .label } | [EntitlementSubscription]({{site.baseurl}}/entity-system/index/entitlementSubscription) | 
+| `entitlementSubscription` | `none`{: .label } | [EntitlementSubscription]({{site.baseurl}}/entity-system/entity-index/entitlementSubscription) | 

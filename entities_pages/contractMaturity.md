@@ -3,15 +3,15 @@ layout: page
 title: ContractMaturity
 parent: Entities Index
 grand_parent: The Entity System
-permalink: /entity-system/index/contractmaturity
+permalink: /entity-system/entity-index/contractmaturity
 ---
 
 ## ContractMaturity
 Object that represents a contract's maturity information, including the expiration month and specific date, product ID, and whether or not this is the front-month contract.
 
 #### Related
-- [Contract]({{site.baseurl}}/entity-system/index/contract)
-- [ContractMargin]({{site.baseurl}}/entity-system/index/contractmargin)
+- [Contract]({{site.baseurl}}/entity-system/entity-index/contract)
+- [ContractMargin]({{site.baseurl}}/entity-system/entity-index/contractmargin)
 
 ### Definition
 

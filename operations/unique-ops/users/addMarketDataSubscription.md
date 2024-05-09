@@ -38,14 +38,14 @@ op: true
 
 ## `/user/addMarketDataSubscription`
 This operation is used to:
-- Cancel [TradovateSubscription]({{site.baseurl}}/entity-system/index/TradovateSubscription)s, [MarketDataSubscription]({{site.baseurl}}/entity-system/index/MarketDataSubscription)
+- Cancel [TradovateSubscription]({{site.baseurl}}/entity-system/entity-index/TradovateSubscription)s, [MarketDataSubscription]({{site.baseurl}}/entity-system/entity-index/MarketDataSubscription)
 
 ### Request
 
 | Property | Tags | Type | Remarks
 |:---------|:-----|:-----|:-------
-| `userId` | `required`{: .label .label-red } | number, `int64` | The ID of the associated [User]({{site.baseurl}}/entity-system/index/User) to assign the permission to.
-| `accountId` | `required`{: .label .label-red } | number, `int64` | The ID of the simulation [Account]({{site.baseurl}}/entity-system/index/Account) to assign permission.
+| `userId` | `required`{: .label .label-red } | number, `int64` | The ID of the associated [User]({{site.baseurl}}/entity-system/entity-index/User) to assign the permission to.
+| `accountId` | `required`{: .label .label-red } | number, `int64` | The ID of the simulation [Account]({{site.baseurl}}/entity-system/entity-index/Account) to assign permission.
 
 
 ### Response
@@ -54,4 +54,4 @@ This operation is used to:
 
 | Property | Tags | Type | Remarks
 |:---------|:-----|:-----|:-------
-| `tradingPermission` | `required`{: .label .label-red } | [TradingPermission]({{site.baseurl}}/entity-system/index/TradingPermission) | Created trading permission.
+| `tradingPermission` | `required`{: .label .label-red } | [TradingPermission]({{site.baseurl}}/entity-system/entity-index/TradingPermission) | Created trading permission.

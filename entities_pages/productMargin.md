@@ -3,11 +3,14 @@ layout: page
 title: ProductMargin
 parent: Entities Index
 grand_parent: The Entity System
-permalink: /entity-system/index/productmargin
+permalink: /entity-system/entity-index/productmargin
 ---
 
 ## ProductMargin
-- [Product]({{site.baseurl}}/entity-system/index/Product)
+You can use this object to find the margin requirements for a product.
+
+#### Related
+- [Product]({{site.baseurl}}/entity-system/entity-index/Product)
 
 ### Definition
 

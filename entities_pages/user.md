@@ -3,7 +3,7 @@ layout: page
 title: User
 parent: Entities Index
 grand_parent: The Entity System
-permalink: /entity-system/index/user
+permalink: /entity-system/entity-index/user
 ---
 
 ## User

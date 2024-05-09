@@ -3,11 +3,11 @@ layout: page
 title: ContractGroup
 parent: Entities Index
 grand_parent: The Entity System
-permalink: /entity-system/index/contractgroup
+permalink: /entity-system/entity-index/contractgroup
 ---
 
 ## ContractGroup
-Simple object to represent a category of [Contract]({{site.baseurl}}/entity-system/index/contract).
+Simple object to represent a category of [Contract]({{site.baseurl}}/entity-system/entity-index/contract).
 
 #### Related
 

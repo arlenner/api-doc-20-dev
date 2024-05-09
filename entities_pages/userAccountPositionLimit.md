@@ -3,25 +3,25 @@ layout: page
 title: UserAccountPositionLimit
 parent: Entities Index
 grand_parent: The Entity System
-permalink: /entity-system/index/useraccountpositionlimit
+permalink: /entity-system/entity-index/useraccountpositionlimit
 ---
 
 ## UserAccountPositionLimit
-An object that represents a Position Limit. This object can be parameterized by its sister-object, [AccountRiskParameter]({{site.baseurl}}/entity-system/index/accountriskparameter).
+An object that represents a Position Limit. This object can be parameterized by its sister-object, [AccountRiskParameter]({{site.baseurl}}/entity-system/entity-index/accountriskparameter).
 
 #### Related
-- [UserAccountRiskParameter]({{site.baseurl}}/entity-system/index/useraccountriskparameter)
-- [AccountRiskStatus]({{site.baseurl}}/entity-system/index/accountriskstatus)
-- [Account]({{site.baseurl}}/entity-system/index/account)
+- [UserAccountRiskParameter]({{site.baseurl}}/entity-system/entity-index/useraccountriskparameter)
+- [AccountRiskStatus]({{site.baseurl}}/entity-system/entity-index/accountriskstatus)
+- [Account]({{site.baseurl}}/entity-system/entity-index/account)
 
 ### Definition
 
 | Property | Tags | Type | Remarks
 |:---------|:-----|:-----|:-------
 | `id` | `none`{: .label } | number, `int64` |
-| `contractId` | `none`{: .label } | number, `int64` | Entity ID of a [Contract]({{site.baseurl}}/entity-system/index/contract) that this Position Limit should apply to.
-| `productId` | `none`{: .label } | number, `int64` | Entity ID of a [Product]({{site.baseurl}}/entity-system/index/product) that this Position Limit should apply to.
-| `exchangeId` | `none`{: .label } | number, `int64` | Entity ID of an [Exchange]({{site.baseurl}}/entity-system/index/exchange) that this Position Limit should apply to.
+| `contractId` | `none`{: .label } | number, `int64` | Entity ID of a [Contract]({{site.baseurl}}/entity-system/entity-index/contract) that this Position Limit should apply to.
+| `productId` | `none`{: .label } | number, `int64` | Entity ID of a [Product]({{site.baseurl}}/entity-system/entity-index/product) that this Position Limit should apply to.
+| `exchangeId` | `none`{: .label } | number, `int64` | Entity ID of an [Exchange]({{site.baseurl}}/entity-system/entity-index/exchange) that this Position Limit should apply to.
 | `productType` | `none`{: .label } | string enum, `"CommonStock"`, `"Continuous"`, `"Cryptocurrency"`, `"Futures"`, `"MarketInternals"`, `"Options"`, `"Spread"` |
 | `riskDiscountContractGroupId` | `none`{: .label } | number, `int64` |
 | `productVerificationStatus` | `none`{: .label } | string enum, `"Inactive"`, `"Locked"`, `"ReadyForContracts"`, `"ReadyToTrade"`, `"Verified"` |

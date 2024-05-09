@@ -3,15 +3,15 @@ layout: page
 title: FillFee
 parent: Entities Index
 grand_parent: The Entity System
-permalink: /entity-system/index/fillfee
+permalink: /entity-system/entity-index/fillfee
 ---
 
 ## FillFee
 
 #### Related
-- [Fill]({{site.baseurl}}/entity-system/index/Fill)
-- [FillPair]({{site.baseurl}}/entity-system/index/FillPair)
-- [Order]({{site.baseurl}}/entity-system/index/Order)
+- [Fill]({{site.baseurl}}/entity-system/entity-index/Fill)
+- [FillPair]({{site.baseurl}}/entity-system/entity-index/FillPair)
+- [Order]({{site.baseurl}}/entity-system/entity-index/Order)
 
 ### Definition
 

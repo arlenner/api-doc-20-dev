@@ -3,15 +3,15 @@ layout: page
 title: ContractMargin
 parent: Entities Index
 grand_parent: The Entity System
-permalink: /entity-system/index/contractmargin
+permalink: /entity-system/entity-index/contractmargin
 ---
 
 ## ContractMargin
-Simple object to represent a [Contract]({{site.baseurl}}/entity-system/index/contract)'s margin requirements.
+Simple object to represent a [Contract]({{site.baseurl}}/entity-system/entity-index/contract)'s margin requirements.
 
 #### Related
-- [Contract]({{site.baseurl}}/entity-system/index/contract)
-- [ContractMaturity]({{site.baseurl}}/entity-system/index/contractmaturity)
+- [Contract]({{site.baseurl}}/entity-system/entity-index/contract)
+- [ContractMaturity]({{site.baseurl}}/entity-system/entity-index/contractmaturity)
 
 ### Definition
 

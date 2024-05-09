@@ -26,7 +26,7 @@ op: true
 </script>
 
 ## `/{entity}/find`
-This operation is used to look up an entity that has a `name` field. Note that this operation will *only* work for entities with a `name` field. For example, `/position/find` is technically a valid operation but it will never return anything because [Position]({{site.baseurl}}/entity-system/index/Position) entities do not have a `name` field.
+This operation is used to look up an entity that has a `name` field. Note that this operation will *only* work for entities with a `name` field. For example, `/position/find` is technically a valid operation but it will never return anything because [Position]({{site.baseurl}}/entity-system/entity-index/Position) entities do not have a `name` field.
 
 ## Format
 For HTTP requests, we can use this format:

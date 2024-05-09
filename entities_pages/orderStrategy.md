@@ -3,7 +3,7 @@ layout: page
 title: OrderStrategy
 parent: Entities Index
 grand_parent: The Entity System
-permalink: /entity-system/index/orderstrategy
+permalink: /entity-system/entity-index/orderstrategy
 ---
 
 ## OrderStrategy
@@ -15,10 +15,10 @@ permalink: /entity-system/index/orderstrategy
 | Property | Tags | Type | Remarks
 |:---------|:-----|:-----|:-------
 | `id` | `none`{: .label } | number, `int64` | 
-| `accountId` | `required`{: .label .label-red } | number, `int64` | ID of related [Account]({{site.baseurl}}/entity-system/index/Account) entity.
+| `accountId` | `required`{: .label .label-red } | number, `int64` | ID of related [Account]({{site.baseurl}}/entity-system/entity-index/Account) entity.
 | `timestamp` | `required`{: .label .label-red } | Date string | Time that this Order Strategy instance was generated.
-| `contractId` | `required`{: .label .label-red } | number, `int64` | ID of related [Contract]({{site.baseurl}}/entity-system/index/Contract) entity.
-| `orderStrategyTypeId` | `required`{: .label .label-red } | number, `int64` | This is the ID of the [OrderStrategyType]({{site.baseurl}}/entity-system/index/OrderStrategyType) entity that this OrderStrategy will utilize. To find the available Order Strategies it is advised that you use the User Sync operation's initial response, which contains an array of OrderStrategyTypes available to your user.
+| `contractId` | `required`{: .label .label-red } | number, `int64` | ID of related [Contract]({{site.baseurl}}/entity-system/entity-index/Contract) entity.
+| `orderStrategyTypeId` | `required`{: .label .label-red } | number, `int64` | This is the ID of the [OrderStrategyType]({{site.baseurl}}/entity-system/entity-index/OrderStrategyType) entity that this OrderStrategy will utilize. To find the available Order Strategies it is advised that you use the User Sync operation's initial response, which contains an array of OrderStrategyTypes available to your user.
 | `initiatorId` | `none`{: .label } | number, `int64` | Entity ID of the User that initiated this OrderStrategy.
 | `action` | `required`{: .label .label-red } | string enum, `"Buy"` `"Sell"` | 
 | `params` | `JSON`{: .label } | string <= 8192 chars | This should be a JSON string with the schema defined in the Notes section below.

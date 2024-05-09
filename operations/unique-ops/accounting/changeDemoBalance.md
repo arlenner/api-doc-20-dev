@@ -25,7 +25,7 @@ op: true
                 selector: '#once-daily-warning',
                 theme: 'grey',
                 title: 'WARNING:',
-                message: `Keep in mind, you can only call this endpoint once daily. If you are using this to perform some kind of account reset you will be limited to one daily adjustment.`,
+                message: `Keep in mind, retail API users can only call this endpoint once daily. If you are using this to perform some kind of account reset you will be limited to one daily adjustment.`,
                 showWhen() {
                     return !window[TDV].SiteStorage.getIsVendor();
                 }
@@ -35,20 +35,20 @@ op: true
 </script>
 
 ## `/cashBalance/changeDemoBalance`
-Change a Simulation [Account]({{site.baseurl}}/entity-system/index/Account)'s cash balance.
+Change a Simulation [Account]({{site.baseurl}}/entity-system/entity-index/Account)'s cash balance.
 
 #### Related
-- [CashBalance]({{site.baseurl}}/entity-system/index/CashBalance)
+- [CashBalance]({{site.baseurl}}/entity-system/entity-index/CashBalance)
 - [`/userAccountAutoLiq/update`]({{site.baseurl}}/all-/userAccountAutoLiq/update)
 
 ### Request
 
 | Property | Tags | Type | Remarks
 |:---------|:-----|:-----|:-------
-| `accountId` | `required`{: .label .label-red } | number, `int64` | SIM [Account]({{site.baseurl}}/entity-system/index/Account) to change.
+| `accountId` | `required`{: .label .label-red } | number, `int64` | SIM [Account]({{site.baseurl}}/entity-system/entity-index/Account) to change.
 | `cashChange` | `required`{: .label .label-red } | number, double | Cash amount to change balance by. Accepts negative numbers for negative balance changes.
 
 ### Notes
 <div id="once-daily-warning"></div>
 
-- In combination with [`/userAccountAutoLiq/update`]({{site.baseurl}}/all-ops/userAccountAutoLiq/update), you can use this operation to perform a 'soft-reset'. Use the AutoLiq's Update operation to set a blank policy, then perform your balance change and set the new AutoLiq policy. 
+- When using this operation, be aware that the associated [AccountRiskStatus]({{site.baseurl}}/entity-system/index/AccountRiskStatus)'s `maxNetLiq` field will be affected by this change. If you add $1,000.00 to an account with a Trailing Max Drawdown applied, the drawdown level will move accordingly.

@@ -3,18 +3,18 @@ layout: page
 title: TradeDate
 parent: Entities Index
 grand_parent: The Entity System
-permalink: /entity-system/index/tradedate
+permalink: /entity-system/entity-index/tradedate
 ---
 
 ## TradeDate
 An object that represents the date of a trade session by its `year`, `month` and `day`.
 
 #### Related
-- [CashBalance]({{site.baseurl}}/entity-system/index/cashbalance)
-- [CashBalanceLog]({{site.baseurl}}/entity-system/index/cashbalancelog)
-- [ExecutionReport]({{site.baseurl}}/entity-system/index/executionreport)
-- [Fill]({{site.baseurl}}/entity-system/index/fill)
-- [Position]({{site.baseurl}}/entity-system/index/position)
+- [CashBalance]({{site.baseurl}}/entity-system/entity-index/cashbalance)
+- [CashBalanceLog]({{site.baseurl}}/entity-system/entity-index/cashbalancelog)
+- [ExecutionReport]({{site.baseurl}}/entity-system/entity-index/executionreport)
+- [Fill]({{site.baseurl}}/entity-system/entity-index/fill)
+- [Position]({{site.baseurl}}/entity-system/entity-index/position)
 
 ### Definition
 

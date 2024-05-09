@@ -36,3 +36,15 @@ op: true
 </script>
 
 <div id="vendor-warning"></div>
+
+## `/account/resetDemoAccountState`
+Reset an account's state to the SOD state on a given [TradeDate]({{site.baseurl}}/entity-system/index/TradeDate)
+
+#### Related
+- [cashbalance/changeDemoBalance]({{site.baseurl}}/entity-system/index/cashbalance/changeDemoBalance)
+
+### Request
+
+| Property | Tags | Type | Remarks
+|:---------|:-----|:-----|:-------
+| `accountIds` | `required`{: .label .label-red } | Array<int> | A list of accounts to reset

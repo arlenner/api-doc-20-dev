@@ -3,14 +3,14 @@ layout: page
 title: Contract
 parent: Entities Index
 grand_parent: The Entity System
-permalink: /entity-system/index/contract
+permalink: /entity-system/entity-index/contract
 ---
 
 ## Contract
 Simple object to represent a Contract. 
 
 #### Related
-- [Product]({{site.baseurl}}/entity-system/index/product)
+- [Product]({{site.baseurl}}/entity-system/entity-index/product)
 
 ### Definition
 

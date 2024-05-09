@@ -3,7 +3,7 @@ layout: page
 title: CheckReplaySessionResponse
 parent: Entities Index
 grand_parent: The Entity System
-permalink: /entity-system/index/checkreplaysessionresponse
+permalink: /entity-system/entity-index/checkreplaysessionresponse
 ---
 
 ## CheckReplaySessionResponse

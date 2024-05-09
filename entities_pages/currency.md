@@ -3,16 +3,17 @@ layout: page
 title: Currency
 parent: Entities Index
 grand_parent: The Entity System
-permalink: /entity-system/index/currency
+permalink: /entity-system/entity-index/currency
 ---
 
 ## Currency
+Representation of a currency like USD, JPY or EUR.
 
 #### Related
-- [CurrencyRate]({{site.baseurl}}/entity-system/index/CurrencyRate)
-- [Account]({{site.baseurl}}/entity-system/index/account)
-- [CashBalance]({{site.baseurl}}/entity-system/index/cashbalance)
-- [CashBalanceLog]({{site.baseurl}}/entity-system/index/cashbalancelog)
+- [CurrencyRate]({{site.baseurl}}/entity-system/entity-index/CurrencyRate)
+- [Account]({{site.baseurl}}/entity-system/entity-index/account)
+- [CashBalance]({{site.baseurl}}/entity-system/entity-index/cashbalance)
+- [CashBalanceLog]({{site.baseurl}}/entity-system/entity-index/cashbalancelog)
 
 ### Definition
 

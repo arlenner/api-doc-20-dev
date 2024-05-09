@@ -28,9 +28,22 @@ op: true
         window[TDV].buildCallouts(
             window[TDV].buildCallouts.defaultAuthWarning,
             window[TDV].buildCallouts.defaultVendorWarning,
+            {
+                selector: '#ws-only',
+                title: 'WARNING:',
+                theme: 'grey',
+                message: `This endpoint should be called via WebSocket.`,
+                showWhen() {
+                    return true;
+                }
+            }
         );
     });
 
 </script>
 
 <div id="vendor-warning"></div>
+
+## `/fundTransaction/adjustCash`
+<div id="ws-only">
+Called via WebSocket. Unlike the [`/cashbalance/changeDemoBalance`]({{site.baseurl}}/all-ops/cashbalance/changeDemoBalance) endpoint, this call should also move the TMD level of an account.

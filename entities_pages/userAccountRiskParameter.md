@@ -3,26 +3,26 @@ layout: page
 title: UserAccountRiskParameter
 parent: Entities Index
 grand_parent: The Entity System
-permalink: /entity-system/index/useraccountriskparameter
+permalink: /entity-system/entity-index/useraccountriskparameter
 ---
 
 ## UserAccountRiskParameter
-This entity is used to parameterize an [UserAccountPositionLimit]({{site.baseurl}}/entity-system/index/useraccountpositionlimit).
+This entity is used to parameterize an [UserAccountPositionLimit]({{site.baseurl}}/entity-system/entity-index/useraccountpositionlimit).
 
 #### Related
-- [UserAccountPositionLimit]({{site.baseurl}}/entity-system/index/useraccountpositionlimit)
-- [AccountRiskStatus]({{site.baseurl}}/entity-system/index/accountriskstatus)
-- [Account]({{site.baseurl}}/entity-system/index/account)
+- [UserAccountPositionLimit]({{site.baseurl}}/entity-system/entity-index/useraccountpositionlimit)
+- [AccountRiskStatus]({{site.baseurl}}/entity-system/entity-index/accountriskstatus)
+- [Account]({{site.baseurl}}/entity-system/entity-index/account)
 
 ### Definition
 
 | Property | Tags | Type | Remarks
 |:---------|:-----|:-----|:-------
 | `id` | `none`{: .label } | number, `int64` | AccountRiskParameter entity ID.
-| `contractId` | `none`{: .label } | number, `int64` | Used to declare that this risk parameter should be applied to the [Contract]({{site.baseurl}}/entity-system/index/contract) with this ID.
-| `productId` | `none`{: .label } | number, `int64` | Used to declare that this risk parameter should be applied to the [Product]({{site.baseurl}}/entity-system/index/product) with this ID.
-| `exchangeId` | `none`{: .label } | number, `int64` | Used to declare that this risk parameter should be applied to the [Exchange]({{site.baseurl}}/entity-system/index/exchange) with this ID.
-| `productType` | `none`{: .label } | string enum, `"CommonStock"`, `"Continuous"`, `"Cryptocurrency"`, `"Futures"`, `"MarketInternals"`, `"Options"`, `"Spread"` | Overarching Product Type that is the target for this risk parameter. See [Product]({{site.baseurl}}/entity-system/index/product).
+| `contractId` | `none`{: .label } | number, `int64` | Used to declare that this risk parameter should be applied to the [Contract]({{site.baseurl}}/entity-system/entity-index/contract) with this ID.
+| `productId` | `none`{: .label } | number, `int64` | Used to declare that this risk parameter should be applied to the [Product]({{site.baseurl}}/entity-system/entity-index/product) with this ID.
+| `exchangeId` | `none`{: .label } | number, `int64` | Used to declare that this risk parameter should be applied to the [Exchange]({{site.baseurl}}/entity-system/entity-index/exchange) with this ID.
+| `productType` | `none`{: .label } | string enum, `"CommonStock"`, `"Continuous"`, `"Cryptocurrency"`, `"Futures"`, `"MarketInternals"`, `"Options"`, `"Spread"` | Overarching Product Type that is the target for this risk parameter. See [Product]({{site.baseurl}}/entity-system/entity-index/product).
 | `riskDiscountContractGroupId` | `none`{: .label } | number, `int64` | 
 | `productVerificationStatus` | `none`{: .label } | string enum, `"Inactive"`, `"Locked"`, `"ReadyForContracts"`, `"ReadyToTrade"`, `"Verified"` |
 | `contractGroupId` | `none`{: .label } | number, `int64` | 
@@ -33,4 +33,4 @@ This entity is used to parameterize an [UserAccountPositionLimit]({{site.baseurl
 | `marginPercentage` | `none`{: .label } | number, double | The maximum percentage of your available margin that you may consume before failing risk on new orders.
 | `marginDollarValue` | `none`{: .label } | number, double | The maximum currency value that you will be allowed to margin for trades, after which you will fail at risk on new orders.
 | `hardLimit` | `none`{: .label } | boolean | 
-| `userAccountPositionLimitId` | `required`{: .label .label-red } | number, `int64` | The ID of the associated [UserAccountPositionLimit]({{site.baseurl}}/entity-system/index/useraccountpositionlimit) entity for this Risk parameter. 
+| `userAccountPositionLimitId` | `required`{: .label .label-red } | number, `int64` | The ID of the associated [UserAccountPositionLimit]({{site.baseurl}}/entity-system/entity-index/useraccountpositionlimit) entity for this Risk parameter. 

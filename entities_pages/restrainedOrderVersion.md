@@ -3,14 +3,14 @@ layout: page
 title: RestrainedOrderVersion
 parent: Entities Index
 grand_parent: The Entity System
-permalink: /entity-system/index/restrainedorderversion
+permalink: /entity-system/entity-index/restrainedorderversion
 ---
 
 ## RestrainedOrderVersion
 
 #### Related
-- [Order]({{site.baseurl}}/entity-system/index/Order)
-- [OrderVersion]({{site.baseurl}}/entity-system/index/OrderVersion)
+- [Order]({{site.baseurl}}/entity-system/entity-index/Order)
+- [OrderVersion]({{site.baseurl}}/entity-system/entity-index/OrderVersion)
 
 ### Definition
 
