@@ -7,15 +7,6 @@ has_children: true
 parent: WebSocket Guide
 ---
 
-<details open markdown="block">
-  <summary>
-    Table of contents
-  </summary>
-  {: .text-delta }
-1. TOC
-{:toc}
-</details>
-
 # Market Data
 The most interesting benefit of using the WebSocket client is getting access to data in real-time.
 
