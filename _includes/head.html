@@ -10,7 +10,12 @@
       {% endif %}
     {% endunless %}
   
-    <link rel="shortcut icon" href="{{ '/assets/images/favicon.png' | relative_url }}" type="image/png">
+    {% if site.build == "NT" %}
+    <link rel="shortcut icon" href="{{ '/assets/images/tdvicon.png' | relative_url }}" type="image/png">
+    {% endif %}
+    {% if site.build_tdv == "TDV" %}
+    <link rel="shortcut icon" href="{{ '/assets/images/nticon.png' | relative_url }}" type="image/png">
+    {% endif %}
     <link rel="stylesheet" href="{{ '/assets/css/just-the-docs-default.css' | relative_url }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/victormono@latest/dist/index.min.css">
   
