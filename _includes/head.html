@@ -10,10 +10,10 @@
       {% endif %}
     {% endunless %}
   
-    {% if site.build = "NT" %}
+    {% if site.build == "NT" %}
     <link rel="shortcut icon" href="{{ '/assets/images/tdvicon.png' | relative_url }}" type="image/png">
     {% endif %}
-    {% if site.build_tdv = "TDV" %}
+    {% if site.build == "TDV" %}
     <link rel="shortcut icon" href="{{ '/assets/images/nticon.png' | relative_url }}" type="image/png">
     {% endif %}
     <link rel="stylesheet" href="{{ '/assets/css/just-the-docs-default.css' | relative_url }}">
