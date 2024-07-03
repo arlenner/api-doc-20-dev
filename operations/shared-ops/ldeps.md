@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: /ldeps
 permalink: /all-ops/shared/ldeps
 parent: Shared
@@ -86,17 +86,17 @@ await entityLDeps('productMargin', [814, 799])
 
 ### Notes
 
-| `masterid` Entity Type | Related Entity Types
+| `masterids` Entity Type | Related Entity Types
 |:-------|:---------------------
-| *(The entity type that should be used for `masterids` parameter)* | *(The operation's returned type)*
-| [`Account`]({{site.baseurl}}/entity-system/entity-index/Account) | [`CashBalance`]({{site.baseurl}}/entity-system/entity-index/CashBalance) [`CashBalanceLog`]({{site.baseurl}}/entity-system/entity-index/CashBalanceLog) [`MarginSnapshot`]({{site.baseurl}}/entity-system/entity-index/MarginSnapshot) [`AccountRiskStatus`]({{site.baseurl}}/entity-system/entity-index/AccountRiskStatus) [`UserAccountAutoLiq`]({{site.baseurl}}/entity-system/entity-index/UserAccountAutoLiq) [`Position`]({{site.baseurl}}/entity-system/entity-index/Position) [`Order`]({{site.baseurl}}/entity-system/entity-index/Order) [`OrderStrategy`]({{site.baseurl}}/entity-system/entity-index/OrderStrategy) [`User`]({{site.baseurl}}/entity-system/entity-index/User) [`UserAccountPositionLimit`]({{site.baseurl}}/entity-system/entity-index/UserAccountPositionLimit) 
-| [`Command`]({{site.baseurl}}/entity-system/entity-index/Command) | [`CommandReport`]({{site.baseurl}}/entity-system/entity-index/CommandReport) [`ExecutionReport`]({{site.baseurl}}/entity-system/entity-index/ExecutionReport)
-| [`Contract`]({{site.baseurl}}/entity-system/entity-index/Contract) | [`ContractMaturity`]({{site.baseurl}}/entity-system/entity-index/ContractMaturity)
-| [`Product`]({{site.baseurl}}/entity-system/entity-index/Product) | [`ProductMargin`]({{site.baseurl}}/entity-system/entity-index/ProductMargin) [`ContractMaturity`]({{site.baseurl}}/entity-system/entity-index/ContractMaturity) `ProductSession`
-| [`Order`]({{site.baseurl}}/entity-system/entity-index/Order) | [`Command`]({{site.baseurl}}/entity-system/entity-index/Command) [`OrderVersion`]({{site.baseurl}}/entity-system/entity-index/OrderVersion) [`Fill`]({{site.baseurl}}/entity-system/entity-index/Fill)
-| [`Exchange`]({{site.baseurl}}/entity-system/entity-index/Exchange) | [`Product`]({{site.baseurl}}/entity-system/entity-index/Product)
-| [`OrderStrategy`]({{site.baseurl}}/entity-system/entity-index/OrderStrategy) | [`OrderStrategyLink`]({{site.baseurl}}/entity-system/entity-index/OrderStrategyLink)
-| [`Fill`]({{site.baseurl}}/entity-system/entity-index/Fill) | `FillFee` 
-| [`Position`]({{site.baseurl}}/entity-system/entity-index/Position) | [`FillPair`]({{site.baseurl}}/entity-system/entity-index/FillPair)
-| [`User`]({{site.baseurl}}/entity-system/entity-index/User) | [`Account`]({{site.baseurl}}/entity-system/entity-index/Account) [`TradingPermission`]({{site.baseurl}}/entity-system/entity-index/TradingPermission) [`ContactInfo`]({{site.baseurl}}/entity-system/entity-index/ContactInfo)
-| [`UserAccountPositionLimit`]({{site.baseurl}}/entity-system/entity-index/UserAccountPositionLimit) | [`UserAccountRiskParameter`]({{site.baseurl}}/entity-system/entity-index/UserAccountRiskParameter)
+| *(The entity type that should be used for `masterid` parameter)* | *(The operation's returned type)*
+| [`Account`]({{site.baseurl}}/entity-system/entity-index/account) | [`CashBalance`]({{site.baseurl}}/entity-system/entity-index/cashbalance) [`CashBalanceLog`]({{site.baseurl}}/entity-system/entity-index/cashbalancelog) [`MarginSnapshot`]({{site.baseurl}}/entity-system/entity-index/marginsnapshot) [`AccountRiskStatus`]({{site.baseurl}}/entity-system/entity-index/accountriskstatus) [`UserAccountAutoLiq`]({{site.baseurl}}/entity-system/entity-index/useraccountautoliq) [`Position`]({{site.baseurl}}/entity-system/entity-index/position) [`Order`]({{site.baseurl}}/entity-system/entity-index/order) [`OrderStrategy`]({{site.baseurl}}/entity-system/entity-index/orderstrategy) [`User`]({{site.baseurl}}/entity-system/entity-index/user) [`UserAccountPositionLimit`]({{site.baseurl}}/entity-system/entity-index/useraccountpositionlimit) 
+| [`Command`]({{site.baseurl}}/entity-system/entity-index/command) | [`CommandReport`]({{site.baseurl}}/entity-system/entity-index/CommandReport) [`ExecutionReport`]({{site.baseurl}}/entity-system/entity-index/executionreport)
+| [`Contract`]({{site.baseurl}}/entity-system/entity-index/contract) | [`ContractMaturity`]({{site.baseurl}}/entity-system/entity-index/contractmaturity)
+| [`Product`]({{site.baseurl}}/entity-system/entity-index/product) | [`ProductMargin`]({{site.baseurl}}/entity-system/entity-index/productmargin) [`ContractMaturity`]({{site.baseurl}}/entity-system/entity-index/contractmaturity) `ProductSession`
+| [`Order`]({{site.baseurl}}/entity-system/entity-index/order) | [`Command`]({{site.baseurl}}/entity-system/entity-index/command) [`OrderVersion`]({{site.baseurl}}/entity-system/entity-index/orderversion) [`Fill`]({{site.baseurl}}/entity-system/entity-index/fill)
+| [`Exchange`]({{site.baseurl}}/entity-system/entity-index/Exchange) | [`Product`]({{site.baseurl}}/entity-system/entity-index/product)
+| [`OrderStrategy`]({{site.baseurl}}/entity-system/entity-index/orderstrategy) | [`OrderStrategyLink`]({{site.baseurl}}/entity-system/entity-index/orderstrategylink)
+| [`Fill`]({{site.baseurl}}/entity-system/entity-index/fill) | `FillFee` 
+| [`Position`]({{site.baseurl}}/entity-system/entity-index/position) | [`FillPair`]({{site.baseurl}}/entity-system/entity-index/fillpair)
+| [`User`]({{site.baseurl}}/entity-system/entity-index/user) | [`Account`]({{site.baseurl}}/entity-system/entity-index/account) [`TradingPermission`]({{site.baseurl}}/entity-system/entity-index/tradingpermission) [`ContactInfo`]({{site.baseurl}}/entity-system/entity-index/contactinfo)
+| [`UserAccountPositionLimit`]({{site.baseurl}}/entity-system/entity-index/useraccountpositionlimit) | [`UserAccountRiskParameter`]({{site.baseurl}}/entity-system/entity-index/useraccountriskparameter)

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Heartbeats
 permalink: /wss-guide/heartbeats
 nav_order: 2
@@ -21,7 +21,7 @@ function checkHeartbeat(ws, verbose = false) {
         lastTime = new Date().getTime();
     }
     const now = new Date().getTime();
-    if(now - lastTime > 2500) {
+    if(now - lastTime >= 2500) {
         if(verbose) {
             console.log('[]');
         }

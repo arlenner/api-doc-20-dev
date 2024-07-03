@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Contract
 parent: Entities Index
 grand_parent: The Entity System

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Requesting API Access
 permalink: /rest-guide/access-token-request/
 parent: REST Guide

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Alerts
 parent: API Operations
 has_children: true

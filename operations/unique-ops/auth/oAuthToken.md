@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: /auth/oAuthToken
 parent: Auth
 grand_parent: API Operations
@@ -314,8 +314,4 @@ const showMe = async (req, res, accessToken) => {
 }
 ```
 We can successfully logout using this new anchor after our usual flow.
-
-# Further Reading
-Congratulations, you now know how to implement OAuth authentication for your Tradovate app! If you'd like to learn more about
-using the Tradovate API, see our other JS examples guides [here](https://github.com/tradovate/example-api-js/).
 

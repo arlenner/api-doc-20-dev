@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Account
 parent: Entities Index
 grand_parent: The Entity System
@@ -16,8 +16,8 @@ This entity represents a source of equity. A User may have ownership of multiple
 - [MarginSnapshot]({{site.baseurl}}/entity-system/entity-index/marginsnapshot)
 - [AccountRiskStatus]({{site.baseurl}}/entity-system/entity-index/accountriskstatus)
 - [UserAccountAutoLiq]({{site.baseurl}}/entity-system/entity-index/useraccountautoliq)
-- [UserAccountPositionLimit]({{site.baseurl}}/entity-system/entity-index/Useraccountpositionlimit)
-- [UserAccountRiskParameter]({{site.baseurl}}/entity-system/entity-index/UserAccountRiskParameter)
+- [UserAccountPositionLimit]({{site.baseurl}}/entity-system/entity-index/useraccountpositionlimit)
+- [UserAccountRiskParameter]({{site.baseurl}}/entity-system/entity-index/useraccountriskparameter)
 
 ### Definition
 
@@ -30,7 +30,7 @@ This entity represents a source of equity. A User may have ownership of multiple
 | `active`  | `required`{: .label .label-red}  | boolean | 
 | `clearingHouseId` | `required`{: .label .label-red}  | number, `int64` | 
 | `riskCategoryId` | `required`{: .label .label-red}  | number, `int64` | The related Risk Category. Typical retail users won't use this.
-| `autoLiqProfileId` | `required`{: .label .label-red}  | number, `int64` | The [UserAccountAutoLiq]({{site.baseurl}}/entity-system/entity-index/UserAccountAutoLiq) (Auto Liquidation profile) associated with this account. The Auto Liq profile actually shares the same entity ID as the account since they have a 1:1 relationship.
+| `autoLiqProfileId` | `required`{: .label .label-red}  | number, `int64` | The [UserAccountAutoLiq]({{site.baseurl}}/entity-system/entity-index/useraccountautoliq) (Auto Liquidation profile) associated with this account. The Auto Liq profile actually shares the same entity ID as the account since they have a 1:1 relationship.
 | `marginAccountType` | `required`{: .label .label-red}  | string enum, `"Hedger"`, `"Speculator"` | 
 | `legalStatus` | `required`{: .label .label-red}  | string enum, `"Corporation"`, `"GP"`, `"IRA"`, `"Individual"`, `"LLC"`, `"LLP"`, `"LP"`, `"Trust"`, `"Joint"` | Typically, retail users are `"Individual"`
 | `timestamp` |`required`{: .label .label-red}  | Date string | 

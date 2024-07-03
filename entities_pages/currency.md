@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Currency
 parent: Entities Index
 grand_parent: The Entity System
@@ -10,7 +10,7 @@ permalink: /entity-system/entity-index/currency
 Representation of a currency like USD, JPY or EUR.
 
 #### Related
-- [CurrencyRate]({{site.baseurl}}/entity-system/entity-index/CurrencyRate)
+- [CurrencyRate]({{site.baseurl}}/entity-system/entity-index/currencyrate)
 - [Account]({{site.baseurl}}/entity-system/entity-index/account)
 - [CashBalance]({{site.baseurl}}/entity-system/entity-index/cashbalance)
 - [CashBalanceLog]({{site.baseurl}}/entity-system/entity-index/cashbalancelog)

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: /list
 permalink: /all-ops/shared/list
 parent: Shared

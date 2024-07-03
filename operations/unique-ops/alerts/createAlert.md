@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: /alert/createAlert
 parent: Alerts
 grand_parent: API Operations

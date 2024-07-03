@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: replay/changeSpeed
 permalink: /wss-guide/market-replay/change-speed
 grand_parent: WebSocket Guide

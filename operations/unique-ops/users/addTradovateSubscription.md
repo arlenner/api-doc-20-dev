@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: /user/addTradovateSubscription
 parent: Users
 grand_parent: API Operations

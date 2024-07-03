@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: /adminAlertSignal/completeAlertSignal
 parent: Alerts
 grand_parent: API Operations

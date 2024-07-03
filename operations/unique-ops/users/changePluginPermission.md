@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: /user/changePluginPermission
 parent: Users
 grand_parent: API Operations

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: /account/getCashBalanceSnapshot
 parent: Accounting
 grand_parent: API Operations
@@ -34,5 +34,5 @@ op: true
 </script>
 
 ## `/cashBalance/getcashbalancesnapshot`
-Get a snapshot of an [Account]({{site.baseurl}}/entity-system/entity-index/Account)'s cashbalance. This call is best suited for one-shot requests to display some instant data, but not for developing a real-time stream.
+Get a snapshot of an [Account]({{site.baseurl}}/entity-system/entity-index/account)'s cashbalance. This call is best suited for one-shot requests to display some instant data, but not for developing a real-time stream.
 <div id="no-polling"></div>

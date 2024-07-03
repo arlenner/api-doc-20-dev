@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: /auth/renewAccessToken
 parent: Auth
 grand_parent: API Operations
@@ -29,7 +29,7 @@ This operation is used to renew an API session's expiration time.
 |  `<none>`| `none`{: .label } | `<none>` | *(Simple GET request)*
 
 ### Response
-[AccessTokenResponse]({{site.baseurl}}/entity-system/entity-index/AccessTokenResponse)
+[AccessTokenResponse]({{site.baseurl}}/entity-system/entity-index/accesstokenresponse)
 
 ### Example
 

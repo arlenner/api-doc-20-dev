@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: user/syncRequest
 permalink: /all-ops/websockets/syncRequest
 grand_parent: API Operations
@@ -41,4 +41,10 @@ mysocket.onmessage = msg => {
     }
 }
 
+```
+
+### Notes
+- If you are a B2B Organization Vendor, please be sure to add the `splitResponses` field to your request body! Failure to do so will result in the connection being immediately terminated without obvious logging.
+```js
+mySocket.send(`user/syncrequest\n1\n\n${JSON.stringify({ users: [orgAdminId], splitResponses: true })}`)
 ```

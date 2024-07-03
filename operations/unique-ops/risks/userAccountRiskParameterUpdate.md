@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: /userAccountRiskParameter/update
 parent: Risks
 grand_parent: API Operations

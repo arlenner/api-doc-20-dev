@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: /account/resetDemoAccountState
 parent: Accounting
 grand_parent: API Operations
@@ -38,13 +38,14 @@ op: true
 <div id="vendor-warning"></div>
 
 ## `/account/resetDemoAccountState`
-Reset an account's state to the SOD state on a given [TradeDate]({{site.baseurl}}/entity-system/index/TradeDate)
+Reset one or more accounts' state to its Start-of-day state on a given [TradeDate]({{site.baseurl}}/entity-system/index/tradedate)
 
 #### Related
-- [cashbalance/changeDemoBalance]({{site.baseurl}}/entity-system/index/cashbalance/changeDemoBalance)
+- [cashbalance/changeDemoBalance]({{site.baseurl}}/entity-system/index/cashbalance/changedemobalance)
 
 ### Request
 
 | Property | Tags | Type | Remarks
 |:---------|:-----|:-----|:-------
-| `accountIds` | `required`{: .label .label-red } | Array<int> | A list of accounts to reset
+| `accountIds` | `required`{: .label .label-red } | Array<int> | A list of [Account]({{site.baseurl}}/entity-system/index/account) IDs to reset.
+| `resetTradeDate` | `required`{: .label .label-red } | [TradeDate]({{site.baseurl}}/entity-system/index/tradedate) | The [TradeDate]({{site.baseurl}}/entity-system/index/TradeDate) session you want to reset these accounts' states to.

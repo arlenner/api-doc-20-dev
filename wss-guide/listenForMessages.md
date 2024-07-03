@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Listen to Message Events
 permalink: /all-ops/websockets/messages
 grand_parent: API Operations

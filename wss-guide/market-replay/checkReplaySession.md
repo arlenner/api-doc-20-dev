@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: replay/checkReplaySession
 permalink: /wss-guide/market-replay/check-replay-session
 grand_parent: WebSocket Guide
@@ -8,7 +8,7 @@ parent: Market Replay
 
 ## `replay/checkReplaySession`
 - The `checkReplaySession` operation is used to determine if a Market Replay session is within the scope of your User's permission to request.
-- This operation should be called before attempting to connect to a Market Replay session using the [`replay/initializeClock`]({{site.baseurl}}/all-ops/websocket/initializeClock) operation.
+- This operation should be called before attempting to connect to a Market Replay session using the [`replay/initializeClock`]({{site.baseurl}}/all-ops/websocket/initializeclock) operation.
 
 ### Example
 

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Constructing HTTP Headers
 permalink: /rest-guide/construct-headers/
 parent: REST Guide
@@ -7,7 +7,7 @@ nav_order: 2
 ---
 
 # How to Construct Your HTTP Headers
-Aside from the [`/auth/accessTokenRequest`]({{site.baseurl}}/all-ops/auth/accessTokenRequest) operation, the API should know how to construct our HTTP headers. Luckily this is very simple. Let's strip away the pre-built implementation and work with the browser's built in `fetch` function.
+Aside from the [`/auth/accessTokenRequest`]({{site.baseurl}}/all-ops/auth/accesstokenrequest) operation, the API should know how to construct our HTTP headers. Luckily this is very simple. Let's strip away the pre-built implementation and work with the browser's built in `fetch` function.
 
 ```js
 aysnc function main() {

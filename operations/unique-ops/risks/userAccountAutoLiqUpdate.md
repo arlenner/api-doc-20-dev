@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: /userAccountAutoLiq/update
 parent: Risks
 grand_parent: API Operations

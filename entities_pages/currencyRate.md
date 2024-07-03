@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: CurrencyRate
 parent: Entities Index
 grand_parent: The Entity System
@@ -9,7 +9,7 @@ permalink: /entity-system/entity-index/currencyrate
 ## CurrencyRate
 
 #### Related
-- [Currency]({{site.baseurl}}/entity-system/entity-index/Currency)
+- [Currency]({{site.baseurl}}/entity-system/entity-index/currency)
 - [Account]({{site.baseurl}}/entity-system/entity-index/account)
 - [CashBalance]({{site.baseurl}}/entity-system/entity-index/cashbalance)
 - [CashBalanceLog]({{site.baseurl}}/entity-system/entity-index/cashbalancelog)

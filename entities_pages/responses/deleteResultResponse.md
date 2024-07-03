@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: DeleteResultResponse
 parent: Entities Index
 grand_parent: The Entity System
@@ -10,9 +10,9 @@ permalink: /entity-system/entity-index/deleteresultresponse
 The message received when using either the `userAccountPositonLimit/deleteUserAccountPositionLimit` or `userAccountRiskParameter/deleteUserAccountRiskParameter` operations.
 
 #### Related
-- [UserAccountPositionLimit]({{site.baseurl}}/entity-system/entity-index/UserAccountPositionLimit)
-- [UserAccountRiskParameter]({{site.baseurl}}/entity-system/entity-index/UserAccountRiskParameter)
-- [UserAccountAutoLiq]({{site.baseurl}}/entity-system/entity-index/UserAccountAutoLiq)
+- [UserAccountPositionLimit]({{site.baseurl}}/entity-system/entity-index/useraccountpositionlimit)
+- [UserAccountRiskParameter]({{site.baseurl}}/entity-system/entity-index/useraccountriskparameter)
+- [UserAccountAutoLiq]({{site.baseurl}}/entity-system/entity-index/useraccountautoliq)
 
 ### Definition
 

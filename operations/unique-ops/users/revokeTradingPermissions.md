@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: /user/revokeTradingPermissions
 parent: Users
 grand_parent: API Operations

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: /userPlugin/addEntitlementSubscription
 parent: Users
 grand_parent: API Operations
@@ -47,5 +47,5 @@ This operation is used to add an entitlement to an organization member.
 | `userId` | `none`{: .label } | number, `int64` | User to add the entitlement to. If not specified, this will default to your admin user. Typically, the intention is to add it for a user, so in practice the ID is required.
 
 ### Response
-[AccessTokenResponse]({{site.baseurl}}/entity-system/entity-index/AccessTokenResponse)
+[AccessTokenResponse]({{site.baseurl}}/entity-system/entity-index/accesstokenrequest)
 

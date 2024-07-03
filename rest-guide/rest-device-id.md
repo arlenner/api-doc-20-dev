@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: How to Use Device IDs
 permalink: /rest-guide/device-id/
 parent: REST Guide

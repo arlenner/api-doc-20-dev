@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: /order/cancelOrder
 parent: Orders
 grand_parent: API Operations

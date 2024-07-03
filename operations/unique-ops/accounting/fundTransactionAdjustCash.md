@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: /fundTransaction/adjustCash
 parent: Accounting
 grand_parent: API Operations
@@ -46,4 +46,4 @@ op: true
 
 ## `/fundTransaction/adjustCash`
 <div id="ws-only">
-Called via WebSocket. Unlike the [`/cashbalance/changeDemoBalance`]({{site.baseurl}}/all-ops/cashbalance/changeDemoBalance) endpoint, this call should also move the TMD level of an account.
+Called via WebSocket. Unlike the [`/cashbalance/changeDemoBalance`]({{site.baseurl}}/all-ops/cashbalance/changedemobalance) endpoint, this call should also move the TMD level of an account.

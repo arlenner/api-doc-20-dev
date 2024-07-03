@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: /contract/getProductFeeParams
 parent: Contract Library
 grand_parent: API Operations

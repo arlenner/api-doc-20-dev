@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: FillFee
 parent: Entities Index
 grand_parent: The Entity System
@@ -9,9 +9,9 @@ permalink: /entity-system/entity-index/fillfee
 ## FillFee
 
 #### Related
-- [Fill]({{site.baseurl}}/entity-system/entity-index/Fill)
-- [FillPair]({{site.baseurl}}/entity-system/entity-index/FillPair)
-- [Order]({{site.baseurl}}/entity-system/entity-index/Order)
+- [Fill]({{site.baseurl}}/entity-system/entity-index/fill)
+- [FillPair]({{site.baseurl}}/entity-system/entity-index/fillpair)
+- [Order]({{site.baseurl}}/entity-system/entity-index/order)
 
 ### Definition
 

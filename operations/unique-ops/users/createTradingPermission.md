@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: /user/createTradingPermission
 parent: Users
 grand_parent: API Operations
@@ -33,14 +33,14 @@ op: true
 <div id="vendor-warning"></div>
 
 ## `/user/createTradingPermission`
-This operation is used to create a [TradingPermission]({{site.baseurl}}/entity-system/entity-index/TradingPermission) from a `userId` and and `accountId`.
+This operation is used to create a [TradingPermission]({{site.baseurl}}/entity-system/entity-index/tradingpermission) from a `userId` and and `accountId`.
 
 ### Request
 
 | Property | Tags | Type | Remarks
 |:---------|:-----|:-----|:-------
-| `userId` | `required`{: .label .label-red } | number, `int64` | The ID of the associated [User]({{site.baseurl}}/entity-system/entity-index/User) to assign the permission to.
-| `accountId` | `required`{: .label .label-red } | number, `int64` | The ID of the simulation [Account]({{site.baseurl}}/entity-system/entity-index/Account) to assign permission.
+| `userId` | `required`{: .label .label-red } | number, `int64` | The ID of the associated [User]({{site.baseurl}}/entity-system/entity-index/user) to assign the permission to.
+| `accountId` | `required`{: .label .label-red } | number, `int64` | The ID of the simulation [Account]({{site.baseurl}}/entity-system/entity-index/account) to assign permission.
 
 
 ### Response
@@ -49,4 +49,4 @@ This operation is used to create a [TradingPermission]({{site.baseurl}}/entity-s
 
 | Property | Tags | Type | Remarks
 |:---------|:-----|:-----|:-------
-| `tradingPermission` | `required`{: .label .label-red } | [TradingPermission]({{site.baseurl}}/entity-system/entity-index/TradingPermission) | Created trading permission.
+| `tradingPermission` | `required`{: .label .label-red } | [TradingPermission]({{site.baseurl}}/entity-system/entity-index/tradingpermission) | Created trading permission.

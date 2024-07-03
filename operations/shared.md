@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Shared
 parent: API Operations
 has_children: true

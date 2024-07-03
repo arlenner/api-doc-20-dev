@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Entities are Related
 permalink: /entity-system/entities-are-related/
 parent: The Entity System
@@ -11,7 +11,7 @@ Many entities are related to other entities. You can usually tell when an entity
 
 Understanding how entities relate to one another can be very helpful for understanding how the API works in general. Please refer to the [Entities Index]({{site.baseurl}}/entity-system/index) for a dictionary of Tradovate API Entities and response object schemas.
 
-Here is an example of how to get all of the [Order]({{site.baseurl}}/entity-system/entity-index/Order) entities related to a given [Account]({{site.baseurl}}/entity-system/entity-index/Account).
+Here is an example of how to get all of the [Order]({{site.baseurl}}/entity-system/entity-index/order) entities related to a given [Account]({{site.baseurl}}/entity-system/entity-index/account).
 
 ```js
 async function findRelatedOrders(accountId) {

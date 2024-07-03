@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: /order/modifyOrder
 parent: Orders
 grand_parent: API Operations

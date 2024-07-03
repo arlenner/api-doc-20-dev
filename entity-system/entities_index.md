@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Entities Index
 parent: The Entity System
 has_children: true

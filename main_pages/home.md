@@ -2,7 +2,7 @@
 layout: home
 title: Tradovate API
 permalink: /
-nav-order: 1
+nav_order: 1
 ---
 
 # Welcome to the Tradovate API

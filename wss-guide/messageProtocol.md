@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Message Protocol
 permalink: /wss-guide/message-protocol
 nav_order: 1

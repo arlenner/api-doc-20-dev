@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: replay/initializeClock
 permalink: /wss-guide/market-replay/initialize-clock
 grand_parent: WebSocket Guide

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: /auth/me
 parent: Auth
 grand_parent: API Operations

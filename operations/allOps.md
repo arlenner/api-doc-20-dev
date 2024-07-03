@@ -1,9 +1,9 @@
 ---
-layout: page
+layout: default
 title: API Operations
-permalink: /all-ops/
 has_children: true
-nav_order: 98
+nav_order: 8
+permalink: /all-ops
 ---
 
-## All Operations
+# All Operations

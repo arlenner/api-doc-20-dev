@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: /contract/rollContract
 parent: Contract Library
 grand_parent: API Operations

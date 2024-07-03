@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Users
 parent: API Operations
 has_children: true

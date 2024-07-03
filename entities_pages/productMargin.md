@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: ProductMargin
 parent: Entities Index
 grand_parent: The Entity System
@@ -10,7 +10,7 @@ permalink: /entity-system/entity-index/productmargin
 You can use this object to find the margin requirements for a product.
 
 #### Related
-- [Product]({{site.baseurl}}/entity-system/entity-index/Product)
+- [Product]({{site.baseurl}}/entity-system/entity-index/product)
 
 ### Definition
 

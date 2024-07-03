@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: /contactInfo/updateContactInfo
 parent: Alerts
 grand_parent: API Operations

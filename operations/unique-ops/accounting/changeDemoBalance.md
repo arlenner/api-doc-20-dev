@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: /cashBalance/changeDemoBalance
 parent: Accounting
 grand_parent: API Operations
@@ -35,20 +35,20 @@ op: true
 </script>
 
 ## `/cashBalance/changeDemoBalance`
-Change a Simulation [Account]({{site.baseurl}}/entity-system/entity-index/Account)'s cash balance.
+Change a Simulation [Account]({{site.baseurl}}/entity-system/entity-index/account)'s cash balance.
 
 #### Related
-- [CashBalance]({{site.baseurl}}/entity-system/entity-index/CashBalance)
-- [`/userAccountAutoLiq/update`]({{site.baseurl}}/all-/userAccountAutoLiq/update)
+- [CashBalance]({{site.baseurl}}/entity-system/entity-index/cashbalance)
+- [`/userAccountAutoLiq/update`]({{site.baseurl}}/all-ops/useraccountautoliqupdate)
 
 ### Request
 
 | Property | Tags | Type | Remarks
 |:---------|:-----|:-----|:-------
-| `accountId` | `required`{: .label .label-red } | number, `int64` | SIM [Account]({{site.baseurl}}/entity-system/entity-index/Account) to change.
+| `accountId` | `required`{: .label .label-red } | number, `int64` | SIM [Account]({{site.baseurl}}/entity-system/entity-index/account) to change.
 | `cashChange` | `required`{: .label .label-red } | number, double | Cash amount to change balance by. Accepts negative numbers for negative balance changes.
 
 ### Notes
 <div id="once-daily-warning"></div>
 
-- When using this operation, be aware that the associated [AccountRiskStatus]({{site.baseurl}}/entity-system/index/AccountRiskStatus)'s `maxNetLiq` field will be affected by this change. If you add $1,000.00 to an account with a Trailing Max Drawdown applied, the drawdown level will move accordingly.
+- When using this operation, be aware that the associated [AccountRiskStatus]({{site.baseurl}}/entity-system/index/accountriskstatus)'s `maxNetLiq` field will be affected by this change. If you add $1,000.00 to an account with a Trailing Max Drawdown applied, the drawdown level will move accordingly.

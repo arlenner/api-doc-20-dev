@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Auth
 parent: API Operations
 permalink: /all-ops/auth

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: /accountRiskStatus/updateMaxNetLiq
 parent: AccountRiskStatus
 grand_parent: API Operations

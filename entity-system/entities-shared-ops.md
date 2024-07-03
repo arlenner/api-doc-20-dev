@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Common Operations
 permalink: /entity-system/shared-ops/
 parent: The Entity System
@@ -20,7 +20,7 @@ Where `<prefix>` is either 'live' or 'demo', `<entity>` would be replaced with a
 ---
 
 ## [`/list`]({{site.baseurl}}/all-ops/shared/list)
-`/list` is the simplest request to make, as it has no parameters. Simply by having a valid `accessToken` in the header, we will be able to retrieve lists of the given entity with a `GET` request. `/list` will return every entity of the given type within the scope of your [User]({{site.baseurl}}/entity-system/entity-index/User)'s permissions. So if we call `/account/list` we will retrieve a list of [Account]({{site.baseurl}}/entity-system/entity-index/Account) entities associated with the User making that request.
+`/list` is the simplest request to make, as it has no parameters. Simply by having a valid `accessToken` in the header, we will be able to retrieve lists of the given entity with a `GET` request. `/list` will return every entity of the given type within the scope of your [User]({{site.baseurl}}/entity-system/entity-index/user)'s permissions. So if we call `/account/list` we will retrieve a list of [Account]({{site.baseurl}}/entity-system/entity-index/account) entities associated with the User making that request.
 
 ---
 
@@ -30,7 +30,7 @@ The `/find` operation is used for finding entities that have a `name` field. It 
 ---
 
 ## [`/item`]({{site.baseurl}}/all-ops/shared/item)
-The `/item` operation is useful for finding an entity for which you already know the entity ID. A common example would be looking up the [Contract]({{site.baseurl}}/entity-system/entity-index/Contract) related to an [Order]({{site.baseurl}}/entity-system/entity-index/Order). The [Order]({{site.baseurl}}/entity-system/entity-index/Order) entity has a field called `contractId` that we would use `/contract/item?id=<contractId>` to retrieve the [Contract]({{site.baseurl}}/entity-system/entity-index/Contract) instance.
+The `/item` operation is useful for finding an entity for which you already know the entity ID. A common example would be looking up the [Contract]({{site.baseurl}}/entity-system/entity-index/contract) related to an [Order]({{site.baseurl}}/entity-system/entity-index/order). The [Order]({{site.baseurl}}/entity-system/entity-index/order) entity has a field called `contractId` that we would use `/contract/item?id=<contractId>` to retrieve the [Contract]({{site.baseurl}}/entity-system/entity-index/contract) instance.
 
 ---
 
@@ -54,6 +54,5 @@ When you want to find out what entities are available or search for choices, you
 
 ---
 [{% include chev-left.html %} Entities are Related]({{site.baseurl}}/entity-system/entities-are-related){: .btn .btn-blue .text-grey-lt-000 }
-[Next]({{site.baseurl}}/nextLink){: .btn .btn-blue .text-grey-lt-000 .float-right }
 
 ---

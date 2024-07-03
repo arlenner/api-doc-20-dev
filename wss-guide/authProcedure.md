@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Authorization Procedure
 permalink: /all-ops/websockets/auth
 grand_parent: API Operations

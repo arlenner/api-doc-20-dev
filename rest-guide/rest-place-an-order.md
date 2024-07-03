@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Place An Order
 permalink: /rest-guide/place-an-order/
 parent: REST Guide

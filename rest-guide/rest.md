@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: REST Guide
 permalink: /rest-guide/
 nav_order: 4

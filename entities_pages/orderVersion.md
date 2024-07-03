@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: OrderVersion
 parent: Entities Index
 grand_parent: The Entity System
@@ -15,8 +15,8 @@ permalink: /entity-system/entity-index/orderversion
 | Property | Tags | Type | Remarks
 |:---------|:-----|:-----|:-------
 | `id` | `none`{: .label } | number, `int64` | 
-| `orderId` | `required`{: .label .label-red } | number, `int64` | ID of the related [Order]({{site.baseurl}}/entity-system/entity-index/Order) entity.
-| `orderQty` | `required`{: .label .label-red } | number, `int32` | Number of [Contract]({{site.baseurl}}/entity-system/entity-index/Contract)s traded by this Order request.
+| `orderId` | `required`{: .label .label-red } | number, `int64` | ID of the related [Order]({{site.baseurl}}/entity-system/entity-index/order) entity.
+| `orderQty` | `required`{: .label .label-red } | number, `int32` | Number of [Contract]({{site.baseurl}}/entity-system/entity-index/contract)s traded by this Order request.
 | `orderType` | `required`{: .label .label-red } | string enum, `"Limit"` `"MIT"` `"Market"` `"Stop"` `"StopLimit"` `"TrailingStop"` `"TrailingStopLimit"` | 
 | `price` | `none`{: .label } | number, double | 
 | `stopPrice` | `none`{: .label } | number, double | Required for the `"Stop"`, `"StopLimit"`, `"TrailingStop"`, and `"TrailingStopLimit"` order types.

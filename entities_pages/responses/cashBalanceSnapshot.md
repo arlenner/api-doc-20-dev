@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: CashBalanceSnapshot
 parent: Entities Index
 grand_parent: The Entity System
@@ -7,11 +7,11 @@ permalink: /entity-system/entity-index/cashbalancesnapshot
 ---
 
 ## CashBalanceSnapshot
-A snapshot of an [Account]({{site.baseurl}}/entity-system/entity-index/Account)'s balance at the time of the request.
+A snapshot of an [Account]({{site.baseurl}}/entity-system/entity-index/account)'s balance at the time of the request.
 
 #### Related
-- [CashBalance]({{site.baseurl}}/entity-system/index/CashBalance)
-- [Account]({{site.baseurl}}/entity-system/index/Account)
+- [CashBalance]({{site.baseurl}}/entity-system/index/cashbalance)
+- [Account]({{site.baseurl}}/entity-system/index/account)
 
 ### Definition
 

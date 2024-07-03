@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: /accountRiskStatus/switchRiskCategory
 parent: AccountRiskStatus
 grand_parent: API Operations

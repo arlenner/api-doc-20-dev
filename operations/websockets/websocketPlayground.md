@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: WebSocket Playground
 permalink: /all-ops/websockets/play
 grand_parent: API Operations

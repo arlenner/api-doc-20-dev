@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Product
 parent: Entities Index
 grand_parent: The Entity System
@@ -11,7 +11,7 @@ permalink: /entity-system/entity-index/product
 #### Related
 - [Position]({{site.baseurl}}/entity-system/entity-index/position)
 - [Contract]({{site.baseurl}}/entity-system/entity-index/contract)
-- [ProductMargin]({{site.baseurl}}/entity-system/index/ProductMargin)
+- [ProductMargin]({{site.baseurl}}/entity-system/index/productmargin)
 
 ### Definition
 

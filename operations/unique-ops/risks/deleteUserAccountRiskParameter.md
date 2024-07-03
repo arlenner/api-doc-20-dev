@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: /userAccountPositionLimit/deleteUserAccountRiskParameter
 parent: Risks
 grand_parent: API Operations

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Architecture Overview
 permalink: /architecture-overview
 nav_order: 3

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: ContactInfo
 parent: Entities Index
 grand_parent: The Entity System
@@ -7,17 +7,17 @@ permalink: /entity-system/entity-index/contactinfo
 ---
 
 ## ContactInfo
-An entity to hold a [User]({{site.baseurl}}/entity-system/entity-index/User)'s Contact Information. A user's contact information shouldn't contain any special characters.
+An entity to hold a [User]({{site.baseurl}}/entity-system/entity-index/user)'s Contact Information. A user's contact information shouldn't contain any special characters.
 
 #### Related
-- [User]({{site.baseurl}}/entity-system/entity-index/User)
+- [User]({{site.baseurl}}/entity-system/entity-index/user)
 
 ### Definition
 
 | Property | Tags | Type | Remarks
 |:---------|:-----|:-----|:-------
 | `id` | `none`{: .label } | number | 
-| `userId` | `required`{: .label .label-red } | number | ID of related [User]({{site.baseurl}}/entity-system/entity-index/User) entity.
+| `userId` | `required`{: .label .label-red } | number | ID of related [User]({{site.baseurl}}/entity-system/entity-index/user) entity.
 | `firstName` | `required`{: .label .label-red } | string | Up to 64 characters.
 | `lastName` | `required`{: .label .label-red } | string | Between 2 and 64 characters.
 | `streetAddress1` | `required`{: .label .label-red } | string | Between 3 and 61 characters.

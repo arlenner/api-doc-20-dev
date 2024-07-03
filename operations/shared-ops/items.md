@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: /items
 permalink: /all-ops/shared/items
 parent: Shared

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: /suggest
 permalink: /all-ops/shared/suggest
 parent: Shared

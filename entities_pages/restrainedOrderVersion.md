@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: RestrainedOrderVersion
 parent: Entities Index
 grand_parent: The Entity System
@@ -9,8 +9,8 @@ permalink: /entity-system/entity-index/restrainedorderversion
 ## RestrainedOrderVersion
 
 #### Related
-- [Order]({{site.baseurl}}/entity-system/entity-index/Order)
-- [OrderVersion]({{site.baseurl}}/entity-system/entity-index/OrderVersion)
+- [Order]({{site.baseurl}}/entity-system/entity-index/order)
+- [OrderVersion]({{site.baseurl}}/entity-system/entity-index/orderversion)
 
 ### Definition
 
