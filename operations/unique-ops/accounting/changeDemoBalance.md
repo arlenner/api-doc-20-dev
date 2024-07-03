@@ -39,7 +39,7 @@ Change a Simulation [Account]({{site.baseurl}}/entity-system/entity-index/accoun
 
 #### Related
 - [CashBalance]({{site.baseurl}}/entity-system/entity-index/cashbalance)
-- [`/userAccountAutoLiq/update`]({{site.baseurl}}/all-ops/useraccountautoliqupdate)
+- [`/userAccountAutoLiq/update`]({{site.baseurl}}/all-ops/useraccountautoliq/update)
 
 ### Request
 
