@@ -7,7 +7,7 @@ nav_order: 3
 
 # Architecture Overview
 
-<img id="main-frame" src="{{'/assets/images/SV_ArchitectureOverview.png'}}">
+<img id="main-frame" src="{{'/assets/images/SV_ArchitectureOverview.png' | relative_url }}">
 
 ### Tradovate API
 The Tradovate API is an amalgamation of all of our public facing systems. From the API you can access Trade Data, Market Data, and Replay Sessions.
