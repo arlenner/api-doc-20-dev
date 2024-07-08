@@ -51,4 +51,4 @@ Change a Simulation [Account]({{site.baseurl}}/entity-system/entity-index/accoun
 ### Notes
 <div id="once-daily-warning"></div>
 
-- When using this operation, be aware that the associated [AccountRiskStatus]({{site.baseurl}}/entity-system/index/accountriskstatus)'s `maxNetLiq` field will be affected by this change. If you add $1,000.00 to an account with a Trailing Max Drawdown applied, the drawdown level will move accordingly.
+- When using this operation, be aware that the associated [AccountRiskStatus]({{site.baseurl}}/entity-system/entity-index/accountriskstatus)'s `maxNetLiq` field will be affected by this change. If you add $1,000.00 to an account with a Trailing Max Drawdown applied, the drawdown level will move accordingly.

@@ -7,3 +7,4 @@ color_scheme: tdv
 
 # custom
 build: "TDV"
+mode: "dev"

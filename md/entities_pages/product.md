@@ -11,7 +11,7 @@ permalink: /entity-system/entity-index/product
 #### Related
 - [Position]({{site.baseurl}}/entity-system/entity-index/position)
 - [Contract]({{site.baseurl}}/entity-system/entity-index/contract)
-- [ProductMargin]({{site.baseurl}}/entity-system/index/productmargin)
+- [ProductMargin]({{site.baseurl}}/entity-system/entity-index/productmargin)
 
 ### Definition
 

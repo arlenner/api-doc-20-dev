@@ -10,8 +10,8 @@ permalink: /entity-system/entity-index/cashbalancesnapshot
 A snapshot of an [Account]({{site.baseurl}}/entity-system/entity-index/account)'s balance at the time of the request.
 
 #### Related
-- [CashBalance]({{site.baseurl}}/entity-system/index/cashbalance)
-- [Account]({{site.baseurl}}/entity-system/index/account)
+- [CashBalance]({{site.baseurl}}/entity-system/entity-index/cashbalance)
+- [Account]({{site.baseurl}}/entity-system/entity-index/account)
 
 ### Definition
 

@@ -38,14 +38,14 @@ op: true
 <div id="vendor-warning"></div>
 
 ## `/account/resetDemoAccountState`
-Reset one or more accounts' state to its Start-of-day state on a given [TradeDate]({{site.baseurl}}/entity-system/index/tradedate)
+Reset one or more accounts' state to its Start-of-day state on a given [TradeDate]({{site.baseurl}}/entity-system/entity-index/tradedate)
 
 #### Related
-- [cashbalance/changeDemoBalance]({{site.baseurl}}/entity-system/index/cashbalance/changedemobalance)
+- [cashbalance/changeDemoBalance]({{site.baseurl}}/entity-system/entity-index/cashbalance/changedemobalance)
 
 ### Request
 
 | Property | Tags | Type | Remarks
 |:---------|:-----|:-----|:-------
-| `accountIds` | `required`{: .label .label-red } | Array<int> | A list of [Account]({{site.baseurl}}/entity-system/index/account) IDs to reset.
-| `resetTradeDate` | `required`{: .label .label-red } | [TradeDate]({{site.baseurl}}/entity-system/index/tradedate) | The [TradeDate]({{site.baseurl}}/entity-system/index/TradeDate) session you want to reset these accounts' states to.
+| `accountIds` | `required`{: .label .label-red } | Array<int> | A list of [Account]({{site.baseurl}}/entity-system/entity-index/account) IDs to reset.
+| `resetTradeDate` | `required`{: .label .label-red } | [TradeDate]({{site.baseurl}}/entity-system/entity-index/tradedate) | The [TradeDate]({{site.baseurl}}/entity-system/entity-index/TradeDate) session you want to reset these accounts' states to.
